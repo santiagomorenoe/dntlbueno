@@ -1,0 +1,107 @@
+{
+    "common": {
+      "theme": {
+        "light": "Claro",
+        "dark": "Oscuro", 
+        "system": "Sistema",
+        "toggleTheme": "Cambiar tema"
+      },
+      "navigation": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "products": "Productos",
+        "contact": "Contacto",
+        "testimonials": "Testimonios",
+        "pricing": "Precios"
+      },
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "create": "Crear",
+        "search": "Buscar"
+      }
+    },
+    "home": {
+      "title": {
+        "first": "Bienvenido a",
+        "second": "Syntora"
+      },
+      "subtitle": "Despega con nuestras soluciones",
+      "description": "Creamos experiencias digitales excepcionales que impulsan el crecimiento de tu negocio",
+      "founder": "Desarrollado por",
+      "cta": {
+        "primary": "Descargar mi CV",
+        "secondary": "Mi Linkedin"
+      }
+    },
+    "bento": {
+      "services": [
+        {
+          "title": "Desarrollo web",
+          "description": "Creamos aplicaciones web modernas y responsivas optimizadas para motores de búsqueda y experiencia del usuario.",
+          "link": "/services/web-development"
+        },
+        {
+          "title": "Desarrollo móvil",
+          "description": "Creamos aplicaciones móviles únicas y personalizadas para tus necesidades.",
+          "link": "/services/mobile-development"
+        },
+        {
+          "title": "Desarrollo de software personalizado",
+          "description": "Creamos soluciones de software personalizadas que se optimizan para el rendimiento y la escalabilidad. Podemos ayudarte con tus necesidades de negocio.",
+          "link": "/services/custom-software-development"
+        },
+        {
+          "title": "Desarrollo de IA",
+          "description": "Creamos soluciones de IA personalizadas que se optimizan para el rendimiento y la escalabilidad.",
+          "link": "Muy pronto"
+        },
+        {
+          "title": "Diseño UI/UX",
+          "description": "Creamos interfaces de usuario a medida para cualquiera de tus necesidades.",
+          "link": "/services/ui-ux-design"
+        },
+        {
+          "title": "Soporte y mantenimiento",
+          "description": "Ofrecemos soporte y mantenimiento continuo para tus soluciones de software para asegurar que siempre funcionen correctamente. También podemos ayudarte a mejorar tu sitio web.",
+          "link": "/services/support-and-maintenance"
+        }
+      ]
+    },
+    "tecnologies": {
+      "title": "De la mano de las mejores tecnologías.",
+      "description": "Nuestros servicios."
+    },
+    "services": {
+      "title": "Nuestros servicios",
+      "webDevelopment": {
+        "title": "Desarrollo web",
+        "description": "Sitios web modernos y responsivos"
+      },
+      "digitalMarketing": {
+        "title": "Marketing digital",
+        "description": "Estrategias de marketing efectivas"
+      },
+      "seo": {
+        "title": "SEO",
+        "description": "Optimización para motores de búsqueda"
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "descriptions": ["Recreé el sitio web de Apple iPhone 15 Pro, combinando animaciones GSAP y efectos 3D de Three.js.", "Desarrollé una aplicación de entrega de comida full stack usando React Native, Expo y TypeScript.", "Desarrollé un traductor AI usando React, Next.js, JavaScript, Gemini API y Tailwind CSS.", "Desarrollé una landing page para mostrar mis habilidades de diseño ayudando a algunas empresas a crear su propio sitio web."],
+      "checkLive": "Ver",
+      "comingSoon": "Próximamente"
+    },
+    "contact": {
+      "title": "Desarrollado por Santi Moreno, desarrollador de software, estudiante de ingeniería en IA y fundador de Syntora.",
+      "form": {
+        "updates": "actualizaciones",
+        "product": "producto",
+        "enterprise": "empresa",
+        "contact": "contacto"
+      }
+    }
+  }

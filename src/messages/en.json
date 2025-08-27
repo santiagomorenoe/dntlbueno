@@ -1,0 +1,112 @@
+{
+  "common": {
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "toggleTheme": "Toggle theme"
+    },
+    "navigation": {
+      "home": "Home",
+      "services": "Services",
+      "products": "Products",
+      "contact": "Contact",
+      "testimonials": "Testimonials",
+      "pricing": "Pricing"
+    },
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "create": "Create",
+      "search": "Search"
+    }
+  },
+  "home": {
+    "title": {
+      "first": "Welcome to",
+      "second": "Syntora"
+    },
+    "subtitle": "Ship now with our solutions",
+    "description": "We create exceptional digital experiences that drive your business growth.",
+    "founder": "Developed by",
+    "cta": {
+      "primary": "Download my CV",
+      "secondary": "My Linkedin"
+    }
+  },
+  "bento": {
+    "services": [
+      {
+        "title": "Web Development",
+        "description": "We create modern full-stack responsive web applications that are optimized for search engines and user experience.",
+        "link": "/services/web-development"
+      },
+      {
+        "title": "Mobile Development",
+        "description": "We create modern full-stack mobile applications prioritizing user experience and performance.",
+        "link": "/services/mobile-development"
+      },
+      {
+        "title": "Custom Software Development",
+        "description": "We create custom software solutions that are optimized for performance and scalability. We can help you with your business needs.",
+        "link": "/services/custom-software-development"
+      },
+      {
+        "title": "AI Development",
+        "description": "We create custom AI solutions that are optimized for performance and scalability.",
+        "link": "coming soon"
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "We create modern custom user interfaces for any of your needs.",
+        "link": "/services/ui-ux-design"
+      },
+      {
+        "title": "Support & Maintenance",
+        "description": "We provide ongoing support and maintenance for your software solutions to ensure they are always running smoothly. We can also help you improve your website.",
+        "link": "/services/support-and-maintenance"
+      }
+    ]
+  },
+  "tecnologies": {
+    "title": "With the best technologies.",
+    "description": "Our services."
+  },
+  "services": {
+    "title": "Our services",
+    "webDevelopment": {
+      "title": "Web development",
+      "description": "Modern and responsive websites"
+    },
+    "digitalMarketing": {
+      "title": "Digital marketing",
+      "description": "Effective marketing strategies"
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Search engine optimization"
+    }
+  },
+  "contact": {
+    "title": "Developed by Santi Moreno, software developer, student of AI engineering and founder of Syntora.",
+    "form": {
+      "updates": "updates",
+      "product": "product",
+      "enterprise": "enterprise",
+      "contact": "contact"
+    }
+  },
+  "projects": {
+    "title": "Our projects",
+    "descriptions": [
+      "I recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
+      "I developed a full stack food delivery app using React Native, Expo, and TypeScript.",
+      "I developed an AI-powered translator using React, Next.js, JavaScript, Gemini API & Tailwind CSS.",
+      "I developed a landing page to showcase my desing skills helping some businesses to create their own website."
+    ],
+    "checkLive": "View live",
+    "comingSoon": "Coming soon"
+  }
+}
