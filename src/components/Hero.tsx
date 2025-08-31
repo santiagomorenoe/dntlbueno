@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Calendar, Map, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroVideoDialog } from "./ui/video-dialog";
-import { AnimatedShinyText } from "./ui/shiny-badge";
 
 export default function Hero() {
   return (
@@ -17,10 +16,10 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:16px_16px] opacity-15"></div>
       <div className="absolute inset-0 z-0 overflow-hidden m-5 rounded-[30px] border-2 border-primary/20">
-        <div className="absolute inset-0 bg-background/30 z-10" />
+        <div className="absolute inset-0 bg-black/10 backdrop-blur-xs z-10" />
         <motion.img
           className="w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1657470179447-0f5aa16daa91?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?_gl=1*t013mu*_ga*NDUzMjE1OTc0LjE3NTY1Mzg1NDg.*_ga_8JE65Q40S6*czE3NTY1Mzg1NDgkbzEkZzEkdDE3NTY1Mzg1ODkkajE5JGwwJGgw"
           alt="Hero Image"
           loading="lazy"
           animate={{
@@ -44,11 +43,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="mx-auto mb-6 flex justify-center"
             >
-              <div className="border-border bg-background/80 inline-flex items-center rounded-full border px-3 py-1 text-sm backdrop-blur-sm hover:cursor-pointer hover:scale-105 transition-all duration-300">
-                <AnimatedShinyText>
-                  📍 Nueva Sucursal - Bosques
-                </AnimatedShinyText>
-              </div>
+
             </motion.div>
 
             {/* Heading */}
@@ -56,10 +51,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center text-4xl tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-josefin-sans uppercase pt-4 lg:mt-0"
+              className="pt-4 lg:mt-0"
             >
-              <span className=" font-normal normal-case pr-4">Dental</span>
-              <span className="font-extralight">Bueno</span>
+              <span className="text-7xl bg-gradient-to-b from-white via-primary to-primary/50 text-transparent bg-clip-text font-semibold">Dental</span> <span className="text-7xl font-light bg-gradient-to-b from-white via-accent to-accent/50 text-transparent bg-clip-text">Bueno</span>
             </motion.h1>
           </div>
 
@@ -68,7 +62,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="from-foreground/10 via-foreground/85 to-foreground/50 bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-normal text-lg font-inter text-transparent"
+            className="from-foreground via-foreground to-foreground bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-normal text-lg font-inter text-transparent"
           >
             ¿Listo para sonreír sin límites?
             <br />
@@ -91,13 +85,12 @@ export default function Hero() {
                 Dental Bueno cerca de ti
                 <MapPin className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-              <span className="from-primary via-primary/90 to-primary/80 absolute inset-0 z-0 bg-gradient-to-r opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
             </Button>
 
             <Button
               variant="outline"
               size="lg"
-              className="border-border bg-background/50 flex items-center gap-2 rounded-full backdrop-blur-sm hover:cursor-pointer hover:scale-105 w-full md:w-fit"
+              className="border-border bg-background/50 flex items-center gap-2 rounded-full backdrop-blur-sm hover:cursor-pointer hover:scale-105 w-full md:w-fit hover:text-foreground"
             >
               <Calendar className="h-4 w-4" />
               Agendar cita
@@ -117,10 +110,10 @@ export default function Hero() {
             className="relative mx-auto mt-10 md:mt-26"
           >
             <HeroVideoDialog
-              className="w-full max-w-[90.5%] mx-auto"
+              className="w-full max-w-[90.5%] mx-auto z-[10000]"
               animationStyle="top-in-bottom-out"
               videoSrc="https://www.youtube.com/embed/yvKDsUxq8V0?si=eawyBvja-A5fuFGL"
-              thumbnailSrc="https://scontent.fmex46-1.fna.fbcdn.net/v/t39.30808-6/494540791_1186416466828635_1711051903417352597_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ymRZJ9DMCmQQ7kNvwFVYwjR&_nc_oc=AdmvYmLaCoCXZK3GMyGsocq1jOMjqBW-9cCLrHZQARohR0BybsTIaBU4yXfgrUeILAuWr8arybUgUW-uPFvY2gLl&_nc_zt=23&_nc_ht=scontent.fmex46-1.fna&_nc_gid=lzVyNklsAf8lY0qaP05wVA&oh=00_AfUsrW1sMONJkpAJTBbV5ZP3Rjh9INri7W0s83uCtgEYDA&oe=68B31F01"
+              thumbnailSrc="https://scontent.fmex46-1.fna.fbcdn.net/v/t39.30808-6/494540791_1186416466828635_1711051903417352597_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEgcloL9otE3jtFmbLuM55C7U32G9BHNHXtTfYb0Ec0dQt-VPk5RXOps4X9gR6WFo_fvR-PqRAb0rEWIXjS1j-9&_nc_ohc=6VpLZ9-5VcUQ7kNvwGaNSVe&_nc_oc=AdnpQZKtkOZ7ByCJrJ5f-bcinJ94vAHK26cOxp7yfH6AaJt-kUlhq8xhZiNTDDdHnboSxrPvWiuFnXDipAvBL9Pi&_nc_zt=23&_nc_ht=scontent.fmex46-1.fna&_nc_gid=ucqulPMusRDkTthn24dy0A&oh=00_AfUiGjZ-bko1kGUcKPC5M57nm1ZS7zUtePJSXf6tfnYIHQ&oe=68B9B681"
               thumbnailAlt="Hero Video"
             />
           </motion.div>

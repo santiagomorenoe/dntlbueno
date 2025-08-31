@@ -36,19 +36,19 @@ const data = {
 
 export const About: React.FC = () => {
   return (
-    <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-cyan-100 dark:bg-[#000a21]">
+    <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-primary/10 dark:bg-[#000a21]">
       <div
         className="absolute inset-0 w-full h-full z-20 bg-black/70"
         style={{
           backgroundImage: `url('${data.pattern}')`,
           backgroundRepeat: "repeat",
-          backgroundSize: "1600px",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.2,
           maskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
         }}
         aria-hidden="true"
       />
@@ -63,23 +63,15 @@ export const About: React.FC = () => {
           <div className="max-w-2xl lg:w-1/2 mb-12 lg:mb-0">
             <TitleSection title={data.title} />
 
-            <motion.p
+            <p
               className="text-text text-lg lg:text-xl mb-8 leading-relaxed"
-              variants={titleVariants}
-              initial="hidden"
-              whileInView="visible"
-              custom={2}
             >
               {data.description}
-            </motion.p>
+            </p>
             
             <AboutUs2 />
 
             <motion.div
-              variants={titleVariants}
-              initial="hidden"
-              whileInView="visible"
-              custom={3}
               className="mt-12 flex justify-center"
             >
               <Button className="hover:cursor-pointer hover:scale-105 transition-all duration-300 flex items-center gap-2">
@@ -97,10 +89,6 @@ export const About: React.FC = () => {
               height={875}
               className="w-full h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-tr-[90px] rounded-bl-[90px] rounded-tl-none rounded-br-none"
               loading="lazy"
-              variants={imageVariants}
-              initial="hidden"
-              whileInView="visible"
-              custom={4}
             />
           </div>
         </div>

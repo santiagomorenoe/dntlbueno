@@ -86,7 +86,7 @@ export default function AboutUs2() {
       label: 'Pacientes satisfechos',
       icon: <Users className="h-5 w-5" />,
       delay: 0,
-      color: 'from-[#E66EB2] to-[#E66EB2]',
+      color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
@@ -94,7 +94,7 @@ export default function AboutUs2() {
       label: 'Años de experiencia',
       icon: <Clock className="h-5 w-5" />,
       delay: 0.1,
-      color: 'from-[#E66EB2] to-[#E66EB2]',
+      color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
@@ -102,7 +102,7 @@ export default function AboutUs2() {
       label: 'Proyectos completados',
       icon: <CheckCircle className="h-5 w-5" />,
       delay: 0.2,
-      color: 'from-[#E66EB2] to-[#E66EB2]',
+      color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
@@ -110,7 +110,7 @@ export default function AboutUs2() {
       label: 'Premios ganados',
       icon: <Award className="h-5 w-5" />,
       delay: 0.3,
-      color: 'from-[#E66EB2] to-[#E66EB2]',
+      color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
   ];

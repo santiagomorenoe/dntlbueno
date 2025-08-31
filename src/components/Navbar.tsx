@@ -112,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
   const navbarBackgroundClass = scrolled
     ? "backdrop-blur-xs bg-background/90 top-0"
     : "bg-background/0 top-6";
-  const navbarTextClass = scrolled ? "text-foreground" : "";
+  const navbarTextClass = scrolled ? "text-primary" : "text-white dark:text-foreground";
   const mobileMenuBgClass = scrolled
     ? "bg-background/90 backdrop-blur-xs h-dvh"
     : "backdrop-blur-xs bg-background/80 h-dvh";
@@ -123,12 +123,12 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
     if (logo) {
       return (
         <a href="#Inicio" className="w-fit" key="logo-image">
-          <div className="w-[120px] h-[50px] relative ml-5 md:ml-0">
+          <div className="w-[200px] h-[50px] relative ml-5 md:ml-0">
             <Image
               src={logo}
               alt="logo"
               fill
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain hover:scale-105 transition-all duration-300 hover:cursor-pointer dark:grayscale"
             />
           </div>
         </a>
@@ -148,7 +148,7 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
   return (
     <div>
       <motion.div
-        className={`w-full fixed left-0 right-0 flex items-center justify-between px-5 sm:px-8 lg:px-16 z-50 transition-all duration-300 ease-in-out ${
+        className={`w-full fixed left-0 right-0 flex items-center justify-between px-5 sm:px-8 lg:px-16 z-40 transition-all duration-300 ease-in-out ${
           menuOpen ? "" : navbarBackgroundClass
         } py-4 md:py-5`}
         initial="hidden"
@@ -202,7 +202,7 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
 
         {/* Mobile Menu Button */}
         <motion.div
-          className={`xl:hidden z-50 rounded-full flex flex-row-reverse gap-4 items-center hover:cursor-pointer px-6`}
+          className={`xl:hidden z-40 rounded-full flex flex-row-reverse gap-4 items-center hover:cursor-pointer px-6`}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           <motion.span

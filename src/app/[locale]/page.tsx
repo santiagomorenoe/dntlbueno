@@ -1,7 +1,5 @@
 
 import { useTranslations } from 'next-intl';
-import { LanguageToggle } from '@/components/ui/select-lang';
-import { ThemeToggle } from '@/components/ui/theme-toggle';
 import Hero from '@/components/Hero';
 import { Navbar } from '@/components/Navbar';
 import { ContentData } from '@/types';
@@ -9,8 +7,8 @@ import { About } from '@/components/About';
 import { Services } from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 import Faq from '@/components/Faq';
-import AboutUs2 from '@/components/ui/about-cards';
 import FooterNewsletter from '@/components/Footer';
+import { Locations } from '@/components/Locations';
  
 const data: ContentData = {
   navbar: {
@@ -56,6 +54,7 @@ export default function Home() {
       <About />
       <Services />
       <Testimonials />
+      <Locations />
       <Faq />
       <FooterNewsletter />
     </div>

@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Mail } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { TitleSection } from './ui/title-section';
-import { WhatsAppIcon } from './Navbar';
-import { Button } from './ui/button';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, Mail } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { TitleSection } from "./ui/title-section";
+import { WhatsAppIcon } from "./Navbar";
+import { Button } from "./ui/button";
 
 interface FAQItemProps {
   question: string;
@@ -24,24 +24,24 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
       transition={{
         duration: 0.3,
         delay: index * 0.15,
-        ease: 'easeOut',
+        ease: "easeOut",
       }}
       className={cn(
-        'group border-border/60 rounded-lg border',
-        'transition-all duration-200 ease-in-out',
-        isOpen ? 'bg-card/30 shadow-sm' : 'hover:bg-card/50',
+        "group border-border/60 rounded-lg border",
+        "transition-all duration-200 ease-in-out",
+        isOpen ? "bg-card/30 shadow-sm" : "hover:bg-card/50"
       )}
     >
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between gap-4 px-6 py-4"
+        className="flex w-full items-center justify-between gap-4 px-6 py-4 hover:cursor-pointer"
       >
         <h3
           className={cn(
-            'text-left text-base font-medium transition-colors duration-200',
-            'text-foreground/80',
-            isOpen && 'text-foreground',
+            "text-left text-base font-medium transition-colors duration-200",
+            "text-foreground/80",
+            isOpen && "text-foreground"
           )}
         >
           {question}
@@ -53,12 +53,12 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
           }}
           transition={{
             duration: 0.3,
-            ease: 'easeInOut',
+            ease: "easeInOut",
           }}
           className={cn(
-            'shrink-0 rounded-full p-0.5',
-            'transition-colors duration-200',
-            isOpen ? 'text-primary' : 'text-muted-foreground',
+            "shrink-0 rounded-full p-0.5",
+            "transition-colors duration-200",
+            isOpen ? "text-primary" : "text-muted-foreground"
           )}
         >
           <ChevronDown className="h-4 w-4" />
@@ -69,7 +69,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{
-              height: 'auto',
+              height: "auto",
               opacity: 1,
               transition: {
                 height: {
@@ -88,7 +88,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
               transition: {
                 height: {
                   duration: 0.3,
-                  ease: 'easeInOut',
+                  ease: "easeInOut",
                 },
                 opacity: {
                   duration: 0.25,
@@ -103,7 +103,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
                 exit={{ y: -8, opacity: 0 }}
                 transition={{
                   duration: 0.3,
-                  ease: 'easeOut',
+                  ease: "easeOut",
                 }}
                 className="text-muted-foreground text-sm leading-relaxed"
               >
@@ -118,41 +118,56 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
 }
 
 export default function Faq3() {
-  const faqs: Omit<FAQItemProps, 'index'>[] = [
+  const faqs: Omit<FAQItemProps, "index">[] = [
     {
-      question: '¿Qué hace único a Dental Bueno?',
+      question: "¿Qué hace único a Dental Bueno?",
       answer:
         "Dental Bueno se destaca por ser una clínica odontológica que ofrece servicios de calidad a un precio accesible. Contamos con un equipo de profesionales altamente capacitados y con la última tecnología en procedimientos dentales.",
     },
     {
-      question: '¿Qué servicios ofrece Dental Bueno?',
+      question: "¿Qué servicios ofrece Dental Bueno?",
       answer:
-        'Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento odontológico completo y personalizado.',
+        "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento odontológico completo y personalizado.",
     },
     {
-      question: '¿Cómo puedo agendar una cita?',
+      question: "¿Cómo puedo agendar una cita?",
       answer:
         "Puedes agendar una cita a través de nuestro sitio web o contactando a nuestro centro de atención al cliente.",
     },
     {
-      question: '¿Qué horarios de atención tiene Dental Bueno?',
+      question: "¿Qué horarios de atención tiene Dental Bueno?",
       answer:
-        'Nuestro horario de atención es de lunes a viernes de 8:00 a 18:00 horas.',
+        "Nuestro horario de atención es de lunes a viernes de 8:00 a 18:00 horas.",
     },
     {
-      question: '¿Qué métodos de pago aceptan?',
-      answer:
-        'Aceptamos pagos en efectivo, tarjetas de crédito y débito.',
+      question: "¿Qué métodos de pago aceptan?",
+      answer: "Aceptamos pagos en efectivo, tarjetas de crédito y débito.",
     },
   ];
 
   return (
-    <section className="bg-background relative w-full overflow-hidden py-16">
+    <section className="bg-primary/10 dark:bg-background relative w-full overflow-hidden py-16">
+      <div
+        className="absolute inset-0 w-full h-full z-10 invert dark:invert-0"
+        style={{  
+          backgroundImage: `url('/images/teethPattern.svg')`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.1,
+          maskImage:
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 90%)",
+          WebkitMaskImage:
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 90%)",
+        }}
+        aria-hidden="true"
+      />
+
       {/* Decorative elements */}
       <div className="bg-primary/5 absolute top-20 -left-20 h-64 w-64 rounded-full blur-3xl" />
       <div className="bg-primary/5 absolute -right-20 bottom-20 h-64 w-64 rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-4">
+      <div className="relative max-w-7xl mx-auto px-4 z-20">
         <TitleSection title="Preguntas **Frecuentes**" />
 
         <div className="mx-auto max-w-2xl space-y-2">
@@ -165,7 +180,7 @@ export default function Faq3() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className={cn('mx-auto mt-12 max-w-md rounded-lg p-6 text-center')}
+          className={cn("mx-auto mt-12 max-w-md rounded-lg p-6 text-center")}
         >
           <div className="bg-primary/10 text-primary mb-4 inline-flex items-center justify-center rounded-full p-2">
             <Mail className="h-4 w-4" />
@@ -178,13 +193,7 @@ export default function Faq3() {
           </p>
           <Button
             variant="outline"
-            className={cn(
-              'rounded-md px-4 py-2 text-sm flex justify-center mx-auto items-center gap-2',
-              'bg-primary text-foreground',
-              'font-medium',
-              'hover:cursor-pointer hover:text-foreground',
-              "hover:scale-105 transition-all duration-300",
-            )}
+            className="hover:text-foreground hover:scale-105 hover:cursor-pointer"
           >
             Contactar
             <WhatsAppIcon />
