@@ -1,14 +1,14 @@
 "use client";
 
 import * as React from "react";
-import { Carousel, CarouselContent, CarouselItem } from "./carousel/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselApi } from "./carousel/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import Image from "next/image";
 import { MapPinIcon, ClockIcon } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Button } from "./button";
+
 
 interface Slide {
   img: string;
@@ -27,8 +27,8 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
   const ref = useRef(null);
   useInView(ref, { once: false, amount: 0.3 });
   const [selected, setSelected] = React.useState(0);
-  const [emblaApi, setEmblaApi] = React.useState<any>(null);
-  const carouselRef = React.useRef<any>(null);
+  const [emblaApi, setEmblaApi] = React.useState<CarouselApi | null>(null);
+  const carouselRef = React.useRef<HTMLDivElement>(null);
 
   // Funciones seguras para navegación
   const handlePrev = () => {
@@ -46,7 +46,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
       <Carousel
         plugins={[Autoplay({ delay: 6000, stopOnInteraction: false })]}
         opts={{ loop: true, align: "center" }}
-        setApi={(api) => {
+        setApi={(api: CarouselApi) => {
           setEmblaApi(api);
           if (api) {
             api.on("select", () => setSelected(api.selectedScrollSnap()));
