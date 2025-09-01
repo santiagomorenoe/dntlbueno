@@ -155,7 +155,7 @@ export default function Hero() {
               hidden: { opacity: 0, y: -40 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
             }}
-            className="flex flex-col items-center justify-center md:hidden"
+            className="flex flex-col items-center justify-center md:hidden pt-10"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             style={{ willChange: "transform" }}
@@ -169,7 +169,7 @@ export default function Hero() {
               whileHover={{ y: 10 }}
               whileTap={{ scale: 0.95 }}
               animate={{
-                y: [0, 80, 0],
+                y: [0, 20, 0],
               }}
               transition={{
                 duration: 2,

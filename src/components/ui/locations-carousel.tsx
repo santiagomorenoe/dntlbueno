@@ -125,7 +125,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="w-full flex items-center justify-center mt-10 max-w-[50%] mx-auto z-10">
+        <div className="w-full flex items-center justify-center mt-10 max-w-full md:max-w-[50%] mx-auto z-10">
           <div className="flex w-full rounded-full py-4 px-4 items-center justify-between bg-primary hover:scale-105 transition-all duration-300">
             <motion.button
               whileHover={{ scale: 1.4 }}

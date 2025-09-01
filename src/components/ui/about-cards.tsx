@@ -86,7 +86,7 @@ export default function AboutUs2() {
   const stats = [
     {
       value: 5000,
-      startValue: 4899,
+      startValue: 4950,
       label: 'Pacientes satisfechos',
       icon: <Users className="h-5 w-5" />,
       delay: 0,

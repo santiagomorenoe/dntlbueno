@@ -35,9 +35,9 @@ export const About: React.FC = () => {
           backgroundPosition: "center",
           opacity: 0.2,
           maskImage:
-            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
+            "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
           WebkitMaskImage:
-            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
+            "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%)",
         }}
         aria-hidden="true"
       />
