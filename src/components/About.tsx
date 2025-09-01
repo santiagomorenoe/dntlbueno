@@ -5,15 +5,6 @@ import { motion, Variants } from "framer-motion";
 import AboutUs2 from "./ui/about-cards";
 import { TitleSection } from "./ui/title-section";
 
-const titleVariants: Variants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: (i: number) => ({
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, ease: "easeOut", delay: 0.3 * i },
-  }),
-};
-
 const data = {
   title: "Sonrisa con **B de Bueno**",
   btnText: "¡Agenda tu cita!",

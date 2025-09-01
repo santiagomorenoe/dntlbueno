@@ -36,11 +36,8 @@ const StatItem = ({
   const { resolvedTheme } = useTheme();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.6, delay: delay, ease: 'easeOut' }}
       className={cn(
         'group border-border/30 bg-card/20 relative overflow-hidden rounded-xl border p-6',
         resolvedTheme === 'dark'
@@ -78,7 +75,7 @@ const StatItem = ({
           <p className="text-white/80 text-sm font-medium">{label}</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -86,7 +83,7 @@ export default function AboutUs2() {
   const stats = [
     {
       value: 5000,
-      startValue: 4950,
+      startValue: 4982,
       label: 'Pacientes satisfechos',
       icon: <Users className="h-5 w-5" />,
       delay: 0,
