@@ -1,8 +1,6 @@
 "use client";
 
 import type React from "react";
-import { Button } from "./ui/button";
-import { Calendar } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 import AboutUs2 from "./ui/about-cards";
 import { TitleSection } from "./ui/title-section";
@@ -16,15 +14,6 @@ const titleVariants: Variants = {
   }),
 };
 
-const imageVariants: Variants = {
-  hidden: { opacity: 0, x: 100 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, ease: "easeOut", delay: 0.3 },
-  },
-};
-
 const data = {
   title: "Sonrisa con **B de Bueno**",
   btnText: "¡Agenda tu cita!",
@@ -36,7 +25,7 @@ const data = {
 
 export const About: React.FC = () => {
   return (
-    <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-primary/10 dark:bg-[#000a21]">
+    <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-gradient-to-b from-primary to-primary">
       <div
         className="absolute inset-0 w-full h-full z-20 bg-black/70"
         style={{
@@ -55,30 +44,20 @@ export const About: React.FC = () => {
 
       <div className="absolute inset-0 z-0">
         <div className="from-primary/20 via-background to-background absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]"></div>
-        <div className="bg-primary/5 absolute top-0 left-1/2 -z-10 h-[1000px] w-[1000px] -translate-x-1/2 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-30 max-w-7xl mx-auto">
         <div className="lg:flex lg:items-center lg:gap-12 xl:gap-20">
           <div className="max-w-2xl lg:w-1/2 mb-12 lg:mb-0">
-            <TitleSection title={data.title} />
+            <TitleSection title={data.title}  className="text-white" />
 
             <p
-              className="text-text text-lg lg:text-xl mb-8 leading-relaxed"
+              className="text-lg lg:text-xl mb-8 leading-relaxed text-white"
             >
               {data.description}
             </p>
             
             <AboutUs2 />
-
-            <motion.div
-              className="mt-12 flex justify-center"
-            >
-              <Button className="hover:cursor-pointer hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {data.btnText}
-              </Button>
-            </motion.div>
           </div>
 
           <div className="relative overflow-hidden lg:w-1/2 hover:scale-105 transition-all duration-300 hover:cursor-text">

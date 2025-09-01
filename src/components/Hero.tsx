@@ -1,10 +1,19 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import { Calendar, Map, MapPin } from "lucide-react";
+import { motion, Variants } from "framer-motion";
+import { Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroVideoDialog } from "./ui/video-dialog";
+
+const titleVariants: Variants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut", delay: 1 },
+  },
+};
 
 export default function Hero() {
   return (
@@ -16,7 +25,7 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:16px_16px] opacity-15"></div>
       <div className="absolute inset-0 z-0 overflow-hidden m-5 rounded-[30px] border-2 border-primary/20">
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-xs z-10" />
+        <div className="absolute inset-0 bg-black/45 backdrop-blur-xs z-10" />
         <motion.img
           className="w-full h-full object-cover"
           src="https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?_gl=1*t013mu*_ga*NDUzMjE1OTc0LjE3NTY1Mzg1NDg.*_ga_8JE65Q40S6*czE3NTY1Mzg1NDgkbzEkZzEkdDE3NTY1Mzg1ODkkajE5JGwwJGgw"
@@ -36,25 +45,24 @@ export default function Hero() {
       <div className="relative z-10 container h-full mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-32 lg:mt-[50px]">
         <div className="mx-auto max-w-6xl h-full flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center w-full mx-auto">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mx-auto mb-6 flex justify-center"
-            >
-
-            </motion.div>
-
             {/* Heading */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="pt-4 lg:mt-0"
+            <motion.div
+              className="pt-4 lg:mt-0 flex flex-row gap-2 items-center justify-center text-center bg-gradient-to-l from-white via-white/50 to-white/90 text-transparent bg-clip-text"
+              variants={titleVariants}
+              initial="hidden"
+              animate="visible"
             >
-              <span className="text-7xl bg-gradient-to-b from-white via-primary to-primary/50 text-transparent bg-clip-text font-semibold">Dental</span> <span className="text-7xl font-light bg-gradient-to-b from-white via-accent to-accent/50 text-transparent bg-clip-text">Bueno</span>
-            </motion.h1>
+              <div>
+                <span className="text-4xl md:text-7xl font-semibold font-josefin-sans">
+                  Dental
+                </span>
+              </div>
+              <div className="pb-2 md:pb-4">
+                <span className="text-4xl md:text-7xl font-inter font-light uppercase tracking-tight">
+                  Bueno
+                </span>
+              </div>
+            </motion.div>
           </div>
 
           {/* Description */}
@@ -62,7 +70,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="from-foreground via-foreground to-foreground bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-normal text-lg font-inter text-transparent"
+            className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
           >
             ¿Listo para sonreír sin límites?
             <br />

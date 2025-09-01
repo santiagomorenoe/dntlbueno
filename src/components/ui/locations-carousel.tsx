@@ -62,7 +62,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
               className="cursor-grab active:cursor-grabbing"
             >
               <div
-                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-auto min-h-[520px] md:min-h-[600px] py-6 px-4 ${
+                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-auto min-h-[520px] md:min-h-[600px] py-8 px-4 ${
                   selected === idx
                     ? "opacity-100 z-10"
                     : "opacity-0 pointer-events-none z-0"
@@ -82,7 +82,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
                     alt={slide.title}
                     width={840}
                     height={820}
-                    className="rounded-2xl object-cover w-full max-w-[480px] h-[280px] hover:scale-105 transition-all duration-300"
+                    className="rounded-2xl object-cover w-full max-w-[480px] h-[380px] hover:scale-105 transition-all duration-300"
                     loading="lazy"
                     style={{
                       maskImage:
@@ -93,7 +93,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
                   />
                 </div>
                 {/* Etiqueta tipo */}
-                <div className="w-full grid grid-cols-2  items-start justify-center px-10 gap-4 mt-10">
+                <div className="w-full grid grid-cols-2 items-start justify-center px-10 gap-4 mt-10">
                   {/* Features */}
                   <div className="text-left font-inter text-base md:text-lg font-medium flex flex-col items-start gap-2 text-foreground">
                     <div className="flex items-center flex-row gap-2 text-white dark:text-foreground">

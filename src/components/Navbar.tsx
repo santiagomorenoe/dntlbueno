@@ -123,7 +123,7 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
     if (logo) {
       return (
         <a href="#Inicio" className="w-fit" key="logo-image">
-          <div className="w-[200px] h-[50px] relative ml-5 md:ml-0">
+          <div className="w-[150px] md:w-[200px] h-[50px] md:h-[50px] relative ml-5 md:ml-0">
             <Image
               src={logo}
               alt="logo"

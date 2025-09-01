@@ -1,8 +1,10 @@
+"use client";
+
+import React from "react";
+
 import { ServicesCards } from "./ui/services-cards";
-import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
-import { ShineBorder } from "./ui/shine-border";
 import { TitleSection } from "./ui/title-section";
 
 const data = [
@@ -29,6 +31,30 @@ const data = [
     description:
       "Disfruta de un tratamiento dental en un lugar de vacaciones inspirado. Dedicamos un tiempo exclusivo para ti. ¡Ofrecemos el mejor cuidado y una experiencia memorable!",
     img: "/images/s4.png",
+  },
+  {
+    title: "Diseño de sonrisa",
+    description:
+      "Modificación del aspecto de los dientes para conseguir una apariencia armónica. Se corrige la alineación de los dientes, incluyendo tamaño, color y forma de los dientes según lo necesite el paciente",
+    img: "/images/s5.png",
+  },
+  {
+    title: "Implantes dentales",
+    description:
+      "Recupera tu sonrisa completa con nuestros implantes dentales de alta calidad. Ofrecemos únicamente soluciones duraderas.",
+    img: "/images/s6.png",
+  },
+  {
+    title: "Ortodoncia",
+    description:
+      "Logra una sonrisa perfecta con nuestra ortodoncia de vanguardia. Resultados excepcionales y expertos en cuidado bucal.",
+    img: "/images/s7.png",
+  }, 
+  {
+    title: "Turismo médico",
+    description:
+      "Disfruta de un tratamiento dental en un lugar de vacaciones inspirado. Dedicamos un tiempo exclusivo para ti. ¡Ofrecemos el mejor cuidado y una experiencia memorable!",
+    img: "/images/s8.png",
   },
 ];
 

@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import {
   Users,
   Award,
-  CheckCircle,
+  Map,
   Clock,
 } from 'lucide-react';
 
@@ -19,6 +19,7 @@ interface StatItemProps {
   delay?: number;
   decimalPlaces?: number;
   color?: string;
+  startValue?: number;
 }
 
 const StatItem = ({
@@ -28,6 +29,7 @@ const StatItem = ({
   delay = 0,
   decimalPlaces = 0,
   color = 'from-primary to-primary/70',
+  startValue = 0,
 }: StatItemProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -69,10 +71,11 @@ const StatItem = ({
               value={value}
               decimalPlaces={decimalPlaces}
               className="tabular-nums"
+              startValue={startValue}
             />
-            <span className="ml-1 text-sm font-medium opacity-70">+</span>
+            <span className="ml-1 text-sm font-medium text-white/80">+</span>
           </h3>
-          <p className="text-muted-foreground text-sm font-medium">{label}</p>
+          <p className="text-white/80 text-sm font-medium">{label}</p>
         </div>
       </div>
     </motion.div>
@@ -83,6 +86,7 @@ export default function AboutUs2() {
   const stats = [
     {
       value: 5000,
+      startValue: 4499,
       label: 'Pacientes satisfechos',
       icon: <Users className="h-5 w-5" />,
       delay: 0,
@@ -91,6 +95,7 @@ export default function AboutUs2() {
     },
     {
       value: 15,
+      startValue: 10,
       label: 'Años de experiencia',
       icon: <Clock className="h-5 w-5" />,
       delay: 0.1,
@@ -98,15 +103,17 @@ export default function AboutUs2() {
       decimalPlaces: 0,
     },
     {
-      value: 100,
-      label: 'Proyectos completados',
-      icon: <CheckCircle className="h-5 w-5" />,
+      value: 5,
+      startValue: 3,
+      label: 'Sucursales',
+      icon: <Map className="h-5 w-5" />,
       delay: 0.2,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
       value: 24,
+      startValue: 20,
       label: 'Premios ganados',
       icon: <Award className="h-5 w-5" />,
       delay: 0.3,

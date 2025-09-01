@@ -1,47 +1,63 @@
-'use client';
+"use client";
 
-import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const footerColumns = [
   {
-    title: 'Solutions',
+    title: "Solutions",
     links: [
-      'Business Automation',
-      'Cloud Services',
-      'Analytics',
-      'Integrations',
-      'Support',
+      "Business Automation",
+      "Cloud Services",
+      "Analytics",
+      "Integrations",
+      "Support",
     ],
   },
   {
-    title: 'Resources',
-    links: ['Documentation', 'Case Studies', 'Blog', 'Webinars', 'Community'],
+    title: "Resources",
+    links: ["Documentation", "Case Studies", "Blog", "Webinars", "Community"],
   },
   {
-    title: 'Company',
-    links: ['About Us', 'Careers', 'Contact', 'Partners', 'Press'],
+    title: "Company",
+    links: ["About Us", "Careers", "Contact", "Partners", "Press"],
   },
 ];
 
 const legalLinks = [
-  'Terms of Service',
-  'Privacy Policy',
-  'Cookie Settings',
-  'Accessibility',
+  "Terms of Service",
+  "Privacy Policy",
+  "Cookie Settings",
+  "Accessibility",
 ];
 
 const socialIcons = [
-  { icon: <Instagram className="h-5 w-5 text-accent" />, href: '#' },
-  { icon: <Twitter className="h-5 w-5 text-accent" />, href: '#' },
-  { icon: <Linkedin className="h-5 w-5 text-accent" />, href: '#' },
-  { icon: <Youtube className="h-5 w-5 text-accent" />, href: '#' },
+  { icon: <Instagram className="h-5 w-5 text-accent" />, href: "#" },
+  { icon: <Twitter className="h-5 w-5 text-accent" />, href: "#" },
+  { icon: <Linkedin className="h-5 w-5 text-accent" />, href: "#" },
+  { icon: <Youtube className="h-5 w-5 text-accent" />, href: "#" },
 ];
 
 export default function FooterNewsletter() {
   return (
-    <footer className="bg-primary text-foreground relative w-full pt-20 pb-10">
+    <footer className="bg-primary text-foreground relative w-full pt-20 pb-10 z-10">
+      <div
+        className="absolute inset-0 w-full h-full z-10"
+        style={{
+          backgroundImage: `url('/images/logo_mini.png')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "500px",
+          backgroundPosition: "right",
+          backgroundColor: "rgba(0,0,0,0.5)",
+          opacity: 1,
+          maskImage:
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 95%)",
+          WebkitMaskImage:
+            "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 95%)",
+        }}
+        aria-hidden="true"
+      />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-4 relative z-20">
           <div className="col-span-2 lg:col-span-1">
             <div className="mb-6 flex items-center space-x-2">
               <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-full">
@@ -60,7 +76,9 @@ export default function FooterNewsletter() {
                   />
                 </svg>
               </div>
-              <span className="text-xl text-accent font-bold">Dental Bueno</span>
+              <span className="text-xl text-accent font-bold">
+                Dental Bueno
+              </span>
             </div>
             <p className="text-accent mb-6">
               Empowering businesses with reliable, scalable, and innovative
@@ -80,7 +98,9 @@ export default function FooterNewsletter() {
           </div>
           {footerColumns.map((col) => (
             <div key={col.title}>
-              <h4 className="mb-4 text-lg text-accent font-semibold">{col.title}</h4>
+              <h4 className="mb-4 text-lg text-accent font-semibold">
+                {col.title}
+              </h4>
               <ul className="space-y-3">
                 {col.links.map((text) => (
                   <li key={text}>

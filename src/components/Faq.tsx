@@ -146,7 +146,7 @@ export default function Faq3() {
   ];
 
   return (
-    <section className="bg-primary/10 dark:bg-background relative w-full overflow-hidden py-16">
+    <section className="bg-background relative w-full overflow-hidden py-16">
       <div
         className="absolute inset-0 w-full h-full z-10 invert dark:invert-0"
         style={{  
@@ -162,10 +162,6 @@ export default function Faq3() {
         }}
         aria-hidden="true"
       />
-
-      {/* Decorative elements */}
-      <div className="bg-primary/5 absolute top-20 -left-20 h-64 w-64 rounded-full blur-3xl" />
-      <div className="bg-primary/5 absolute -right-20 bottom-20 h-64 w-64 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 z-20">
         <TitleSection title="Preguntas **Frecuentes**" />
