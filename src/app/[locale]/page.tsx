@@ -10,7 +10,7 @@ import Faq from '@/components/Faq';
 import FooterNewsletter from '@/components/Footer';
 import { Locations } from '@/components/Locations';
  
-const data: ContentData = {
+export const data: ContentData = {
   navbar: {
     btnText: 'Agenda tu cita',
   },

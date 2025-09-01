@@ -2,9 +2,10 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { Calendar, MapPin } from "lucide-react";
+import { ArrowDown, Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroVideoDialog } from "./ui/video-dialog";
+import { data } from "@/app/[locale]/page";
 
 const titleVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
@@ -13,6 +14,33 @@ const titleVariants: Variants = {
     y: 0,
     transition: { duration: 0.5, ease: "easeOut", delay: 1 },
   },
+};
+
+const filteredSections = data.sections.filter((section) => section.active);
+
+const findNextSection = () => {
+  const currentSectionIndex = filteredSections.findIndex(
+    (section) => section.navbar_title === "Inicio"
+  );
+
+  if (
+    currentSectionIndex === -1 ||
+    currentSectionIndex === filteredSections.length - 1
+  ) {
+    return null;
+  }
+
+  return filteredSections[currentSectionIndex + 1];
+};
+
+const handleScrollDown = () => {
+  const nextSection = findNextSection();
+  if (nextSection) {
+    const element = document.getElementById(nextSection.navbar_title);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 };
 
 export default function Hero() {
@@ -73,9 +101,6 @@ export default function Hero() {
             className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
           >
             ¿Listo para sonreír sin límites?
-            <br />
-            Cuidamos tu salud bucal con profesionalismo y calidez. ¡Tu bienestar
-            es nuestra prioridad!
           </motion.p>
 
           {/* CTA Buttons */}
@@ -115,7 +140,7 @@ export default function Hero() {
               type: "spring",
               stiffness: 50,
             }}
-            className="relative mx-auto mt-10 md:mt-26"
+            className="hidden md:block relative mx-auto mt-10 md:mt-26"
           >
             <HeroVideoDialog
               className="w-full max-w-[90.5%] mx-auto z-[10000]"
@@ -124,6 +149,37 @@ export default function Hero() {
               thumbnailSrc="https://scontent.fmex46-1.fna.fbcdn.net/v/t39.30808-6/494540791_1186416466828635_1711051903417352597_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEgcloL9otE3jtFmbLuM55C7U32G9BHNHXtTfYb0Ec0dQt-VPk5RXOps4X9gR6WFo_fvR-PqRAb0rEWIXjS1j-9&_nc_ohc=6VpLZ9-5VcUQ7kNvwGaNSVe&_nc_oc=AdnpQZKtkOZ7ByCJrJ5f-bcinJ94vAHK26cOxp7yfH6AaJt-kUlhq8xhZiNTDDdHnboSxrPvWiuFnXDipAvBL9Pi&_nc_zt=23&_nc_ht=scontent.fmex46-1.fna&_nc_gid=ucqulPMusRDkTthn24dy0A&oh=00_AfUiGjZ-bko1kGUcKPC5M57nm1ZS7zUtePJSXf6tfnYIHQ&oe=68B9B681"
               thumbnailAlt="Hero Video"
             />
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: -40 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+            }}
+            className="flex flex-col items-center justify-center md:hidden"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            style={{ willChange: "transform" }}
+            whileInView="visible"
+            initial="hidden"
+            aria-label="Scroll down"
+            onClick={handleScrollDown}
+          >
+            <motion.span
+              className="border-2 border-white rounded-full p-1 hover:bg-white/20 transition-all duration-300 hover:cursor-pointer"
+              whileHover={{ y: 10 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{
+                y: [0, 80, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                repeatType: "reverse",
+              }}
+            >
+              <ArrowDown className="w-8 h-8 text-white" />
+            </motion.span>
           </motion.div>
         </div>
       </div>

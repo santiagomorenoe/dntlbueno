@@ -86,7 +86,7 @@ export default function AboutUs2() {
   const stats = [
     {
       value: 5000,
-      startValue: 4499,
+      startValue: 4899,
       label: 'Pacientes satisfechos',
       icon: <Users className="h-5 w-5" />,
       delay: 0,
@@ -95,7 +95,7 @@ export default function AboutUs2() {
     },
     {
       value: 15,
-      startValue: 10,
+      startValue: 12,
       label: 'Años de experiencia',
       icon: <Clock className="h-5 w-5" />,
       delay: 0.1,
@@ -113,7 +113,7 @@ export default function AboutUs2() {
     },
     {
       value: 24,
-      startValue: 20,
+      startValue: 22,
       label: 'Premios ganados',
       icon: <Award className="h-5 w-5" />,
       delay: 0.3,
