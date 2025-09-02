@@ -9,10 +9,11 @@
     "navigation": {
       "home": "Home",
       "services": "Services",
-      "products": "Products",
+      "about": "About",
       "contact": "Contact",
       "testimonials": "Testimonials",
-      "pricing": "Pricing"
+      "faq": "FAQ",
+      "scheduling": "Scheduling"
     },
     "actions": {
       "save": "Save",
@@ -25,88 +26,238 @@
   },
   "home": {
     "title": {
-      "first": "Welcome to",
-      "second": "Syntora"
+      "first": "Dental Bueno",
+      "second": "Dental Bueno",
+      "third": "Ready to smile without limits?"
     },
-    "subtitle": "Ship now with our solutions",
-    "description": "We create exceptional digital experiences that drive your business growth.",
-    "founder": "Developed by",
     "cta": {
-      "primary": "Download my CV",
-      "secondary": "My Linkedin"
+      "primary": "Schedule your appointment",
+      "secondary": "Dental Bueno near you"
     }
   },
-  "bento": {
+  "about": {
+    "title": "Smile with **B of Bueno**",
+    "description": "We offer a wide range of specialties and we have the latest technology in dental procedures, so you can have a complete and personalized dental treatment.",
+    "stats": {
+      "satisfiedPatients": "Satisfied Patients",
+      "yearsOfExperience": "Years of Experience",
+      "branches": "Branches",
+      "awardsWon": "Awards Won"
+    }
+  },
+  "services": {
+    "title": "Specialized **Services**",
+    "btnText": "See all services",
     "services": [
       {
-        "title": "Web Development",
-        "description": "We create modern full-stack responsive web applications that are optimized for search engines and user experience.",
-        "link": "/services/web-development"
+        "title": "Dental Design",
+        "description": "Improve the appearance of your smile, aligning color, shape and size of your teeth for a harmonious look."
       },
       {
-        "title": "Mobile Development",
-        "description": "We create modern full-stack mobile applications prioritizing user experience and performance.",
-        "link": "/services/mobile-development"
+        "title": "Dental Implants",
+        "description": "Recover your smile with durable dental implants. Solutions of high quality to restore functionality and aesthetics."
       },
       {
-        "title": "Custom Software Development",
-        "description": "We create custom software solutions that are optimized for performance and scalability. We can help you with your business needs.",
-        "link": "/services/custom-software-development"
+        "title": "Dental Orthodontics",
+        "description": "Align your teeth and improve your oral health with modern orthodontics. Achieve a perfect smile with exceptional results."
       },
       {
-        "title": "AI Development",
-        "description": "We create custom AI solutions that are optimized for performance and scalability.",
-        "link": "coming soon"
+        "title": "Medical Tourism",
+        "description": "Combine your dental treatment with a vacation. Enjoy exclusive attention in a relaxing and memorable environment."
       },
       {
-        "title": "UI/UX Design",
-        "description": "We create modern custom user interfaces for any of your needs.",
-        "link": "/services/ui-ux-design"
+        "title": "Radiology",
+        "description": "Precise diagnostics with advanced technology. We obtain high quality images for a complete dental treatment."
       },
       {
-        "title": "Support & Maintenance",
-        "description": "We provide ongoing support and maintenance for your software solutions to ensure they are always running smoothly. We can also help you improve your website.",
-        "link": "/services/support-and-maintenance"
+        "title": "Dental Surgery",
+        "description": "Specialized procedures to solve complex problems. Our experts guarantee safe and complete oral care."
+      },
+      {
+        "title": "Dental Pediatrics",
+        "description": "Oral health care for children. We promote healthy habits and a positive experience, safe and fun for the little ones."
+      },
+      {
+        "title": "Periodontics",
+        "description": "Specialized treatment for healthy gums. We prevent diseases and offer durable solutions for your oral health."
       }
     ]
   },
-  "tecnologies": {
-    "title": "With the best technologies.",
-    "description": "Our services."
+  "testimonials": {
+    "title": "Our **patients**",
+    "btnText": "See all testimonials",
+    "patients": [
+      {
+        "name": "Eric González",
+        "role": "Patient of the Polanco branch",
+        "description": "The experience was impeccable, from the first consultation to the final follow-up.",
+        "highlight": "experience was impeccable, from the first consultation to the final follow-up."
+      },
+      {
+        "name": "Maya Rodriguez",
+        "role": "Patient of the Cuautitlan Izcalli branch",
+        "description": "I was impressed by the technology and dedication of the team.",
+        "highlight": "technology and dedication of the team."
+      },
+      {
+        "name": "Rafael Pérez",
+        "role": "Patient of the Bosques branch",
+        "description": "I never received such detailed and human attention.",
+        "highlight": "detailed and human attention."
+      },
+      {
+        "name": "Ana López",
+        "role": "Patient of the Coacalco branch",
+        "description": "I loved the speed and organization of the entire service.",
+        "highlight": "speed and organization of the entire service."
+      },
+      {
+        "name": "Juan Pérez",
+        "role": "Patient of the Valle Dorado branch",
+        "description": "I felt that they really adapted to my needs.",
+        "highlight": "adapted to my needs."
+      },
+      {
+        "name": "María Gómez",
+        "role": "Patient of the Pirules branch",
+        "description": "I couldn't find such dedication today.",
+        "highlight": "dedication today."
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "role": "Patient of the Coacalco branch",
+        "description": "I loved the combination of professionalism and warmth.",
+        "highlight": "combination of professionalism and warmth."
+      },
+      {
+        "name": "Laura Hernández",
+        "role": "Patient of the Polanco branch",
+        "description": "I loved the attention to detail.",
+        "highlight": "attention to detail."
+      },
+      {
+        "name": "Pedro García",
+        "role": "Patient of the Cuautitlan Izcalli branch",
+        "description": "I'm impressed by the innovation they apply in their work.",
+        "highlight": "innovation they apply in their work."
+      },
+      {
+        "name": "Sofía López",
+        "role": "Patient of the Bosques branch",
+        "description": "They offer modern solutions with a human touch.",
+        "highlight": "offer modern solutions with a human touch."
+      }
+    ]
   },
-  "services": {
-    "title": "Our services",
-    "webDevelopment": {
-      "title": "Web development",
-      "description": "Modern and responsive websites"
-    },
-    "digitalMarketing": {
-      "title": "Digital marketing",
-      "description": "Effective marketing strategies"
-    },
-    "seo": {
-      "title": "SEO",
-      "description": "Search engine optimization"
-    }
+  "locations": {
+    "title": "Our **branches**",
+    "btnText": "Call us",
+    "btnText2": "Find the nearest",
+    "address": "Address",
+    "schedule": "Schedule",
+    "branches": [
+      {
+        "title": "Polanco",
+        "address": "Av. Polanco 123, Polanco, México",
+        "schedule": "Monday to Friday: 9:00 - 18:00"
+      },
+      {
+        "title": "Coacalco",
+        "address": "Av. de los Ejidos 123, Coacalco, México",
+        "schedule": "Monday to Friday: 9:00 - 18:00"
+      },
+      {
+        "title": "Cuautitlan Izcalli",
+        "address": "Av. Cuautitlan Izcalli 123, Cuautitlan Izcalli, México",
+        "schedule": "Monday to Friday: 9:00 - 18:00"
+      },
+      {
+        "title": "Pirules",
+        "address": "Av. Pirules 123, Pirules, México",
+        "schedule": "Monday to Friday: 9:00 - 18:00"
+      },
+      {
+        "title": "Valle Dorado",
+        "address": "Av. Valle Dorado 123, Valle Dorado, México",
+        "schedule": "Monday to Friday: 9:00 - 18:00"
+      },
+      {
+        "title": "Bosques",
+        "address": "Coming soon...",
+        "schedule": "Coming soon..."
+      }
+    ]
   },
-  "contact": {
-    "title": "Developed by Santi Moreno, software developer, student of AI engineering and founder of Syntora.",
-    "form": {
-      "updates": "updates",
-      "product": "product",
-      "enterprise": "enterprise",
-      "contact": "contact"
-    }
+  "faq": {
+    "title": "Our **FAQ**",
+    "contactText": "Still have questions?",
+    "btnText": "Schedule your appointment",
+    "contactText2": "We are here to help you",
+    "questions": [
+      {
+        "question": "What makes Dental Bueno unique?",
+        "answer": "Dental Bueno is a dental clinic that offers quality services at an affordable price. We have a team of highly trained professionals and the latest technology in dental procedures, so you can have a complete and personalized dental treatment."
+      },
+      {
+        "question": "What services does Dental Bueno offer?",
+        "answer": "We offer a wide range of specialties and we have the latest technology in dental procedures, so you can have a complete and personalized dental treatment."
+      },
+      {
+        "question": "How can I schedule an appointment?",
+        "answer": "You can schedule an appointment through our website or by calling our customer service center."
+      },
+      {
+        "question": "What hours of operation does Dental Bueno have?",
+        "answer": "Our operating hours are from Monday to Friday from 8:00 to 18:00 hours."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept cash, credit and debit cards."
+      }
+    ]
   },
-  "projects": {
-    "title": "Our projects",
-    "descriptions": [
-      "I recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-      "I developed a full stack food delivery app using React Native, Expo, and TypeScript.",
-      "I developed an AI-powered translator using React, Next.js, JavaScript, Gemini API & Tailwind CSS.",
-      "I developed a landing page to showcase my desing skills helping some businesses to create their own website."
+  "footer": {
+    "title": "Our **Social Media**",
+    "description": "We're the best dental clinic in the heart of Mexico. Change your smile and your life.",
+    "btnText": "Follow us",
+    "copyright": "© 2025 Dental Bueno. All rights reserved.",
+    "columns": [
+      {
+        "title": "Solutions",
+        "links": [
+          "Business Automation",
+          "Cloud Services",
+          "Analytics",
+          "Integrations",
+          "Support"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Documentation",
+          "Case Studies",
+          "Blog",
+          "Webinars",
+          "Community"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About Us",
+          "Careers",
+          "Contact",
+          "Partners",
+          "Press"
+        ]
+      }
     ],
-    "checkLive": "View live",
-    "comingSoon": "Coming soon"
-  }
+    "legalLinks": [
+      "Terms of Service",
+      "Privacy Policy",
+      "Cookie Settings",
+      "Accessibility"
+    ]
+  } 
 }

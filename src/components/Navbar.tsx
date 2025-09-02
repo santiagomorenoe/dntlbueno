@@ -8,7 +8,8 @@ import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./ui/theme-toggle";
 import { LanguageToggle } from "./ui/select-lang";
-
+import { ContentData } from "@/types";
+import { useTranslations } from "next-intl";
 export const WhatsAppIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -59,23 +60,50 @@ const linkVariants: Variants = {
   }),
 };
 
-type Section = {
-  active?: boolean;
-  navbar_active?: boolean;
-  navbar_title?: string;
-};
-
-type NavbarProps = {
-  data: {
-    btnText: string;
+export const Navbar: React.FC = () => {
+  const t = useTranslations("common.navigation");
+  const data: ContentData = {
+    navbar: {
+      btnText: "Agenda tu cita",
+    },
+    sections: [
+      {
+        active: true,
+        navbar_active: true,
+        navbar_title: t("home"),
+        link: "#home",
+      },
+      {
+        active: true,
+        navbar_active: true,
+        navbar_title: t("services"),
+        link: "#services",
+      },
+      {
+        active: true,
+        navbar_active: true,
+        navbar_title: t("about"),
+        link: "#about",
+      },
+      {
+        active: true,
+        navbar_active: true,
+        navbar_title: t("testimonials"),
+        link: "#testimonials",
+      },
+      {
+        active: true,
+        navbar_active: true,
+        navbar_title: t("faq"),
+        link: "#faq",
+      },
+    ],
   };
-  sections: Section[];
-};
 
-export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { btnText } = data;
+  const { btnText } = data.navbar;
+  const sections = data.sections;
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
@@ -112,17 +140,48 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
   const navbarBackgroundClass = scrolled
     ? "backdrop-blur-xs bg-background/90 top-0"
     : "bg-background/0 top-6";
-  const navbarTextClass = scrolled ? "text-primary" : "text-white dark:text-foreground";
+  const navbarTextClass = scrolled
+    ? "text-primary"
+    : "text-white dark:text-foreground";
   const mobileMenuBgClass = scrolled
     ? "bg-background/90 backdrop-blur-xs h-dvh"
     : "backdrop-blur-xs bg-background/80 h-dvh";
 
   const filteredSections = sections.filter((section) => section.navbar_active);
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleItemClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  // Función para scroll suave a las secciones
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  // Función para manejar clicks en items de navegación
+  const handleNavItemClick = (link: string) => {
+    if (link.startsWith("#")) {
+      scrollToSection(link);
+    }
+    handleItemClick();
+  };
+
   const renderLogo = () => {
     if (logo) {
       return (
-        <a href="#Inicio" className="w-fit" key="logo-image">
+        <a href="#home" className="w-fit" key="logo-image">
           <div className="w-[150px] md:w-[200px] h-[50px] md:h-[50px] relative ml-5 md:ml-0">
             <Image
               src={logo}
@@ -136,7 +195,7 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
     }
     return (
       <a
-        href="#Inicio"
+        href="#home"
         className="w-fit text-5xl font-bold uppercase text-primary font-inter hover:scale-105 transition-all duration-300"
         key="logo-text"
       >
@@ -169,9 +228,13 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button variant="link" className="hover:scale-105 transition-all duration-300 hover:cursor-pointer text-foreground">
+                  <Button
+                    variant="link"
+                    className="hover:scale-105 transition-all duration-300 hover:cursor-pointer text-foreground"
+                  >
                     <a
-                      href={`#${link.navbar_title}`}
+                      href={link.link}
+                      onClick={() => handleNavItemClick(link.link)}
                       className={`${navbarTextClass}`}
                     >
                       {link.navbar_title}
@@ -189,7 +252,10 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.3 }}
           >
-            <Button className="hover:scale-105 transition-all duration-300 hover:cursor-pointer hover:text-foreground" variant="outline">
+            <Button
+              className="hover:scale-105 transition-all duration-300 hover:cursor-pointer hover:text-foreground"
+              variant="outline"
+            >
               <WhatsAppIcon />
               {btnText}
             </Button>
@@ -252,9 +318,9 @@ export const Navbar: React.FC<NavbarProps> = ({ data, sections }) => {
                     className="transform transition-transform duration-300 hover:scale-105"
                   >
                     <a
-                      href={`#${link.navbar_title}`}
+                      href={link.link}
+                      onClick={() => handleNavItemClick(link.link)}
                       className="text-xl font-medium font-inter text-foreground transition-all duration-200 capitalize"
-                      onClick={handleMenuToggle}
                     >
                       {link.navbar_title}
                     </a>

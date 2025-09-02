@@ -6,5 +6,6 @@ export interface ContentData {
     active: boolean;
     navbar_active: boolean;
     navbar_title: string;
+    link: string;
   }[];
 }

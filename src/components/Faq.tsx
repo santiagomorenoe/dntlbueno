@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { TitleSection } from "./ui/title-section";
 import { WhatsAppIcon } from "./Navbar";
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 interface FAQItemProps {
   question: string;
@@ -27,7 +28,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
         ease: "easeOut",
       }}
       className={cn(
-        "group border-border/60 rounded-lg border",
+        "group border-border rounded-lg border",
         "transition-all duration-200 ease-in-out",
         isOpen ? "bg-card/30 shadow-sm" : "hover:bg-card/50"
       )}
@@ -118,30 +119,31 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
 }
 
 export default function Faq3() {
+  const t = useTranslations("faq");
   const faqs: Omit<FAQItemProps, "index">[] = [
     {
-      question: "¿Qué hace único a Dental Bueno?",
+      question: t("questions.0.question"),
       answer:
-        "Dental Bueno se destaca por ser una clínica odontológica que ofrece servicios de calidad a un precio accesible. Contamos con un equipo de profesionales altamente capacitados y con la última tecnología en procedimientos dentales.",
+        t("questions.0.answer"),
     },
     {
-      question: "¿Qué servicios ofrece Dental Bueno?",
+      question: t("questions.1.question"),
       answer:
-        "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento odontológico completo y personalizado.",
+        t("questions.1.answer"),
     },
     {
-      question: "¿Cómo puedo agendar una cita?",
+      question: t("questions.2.question"),
       answer:
-        "Puedes agendar una cita a través de nuestro sitio web o contactando a nuestro centro de atención al cliente.",
+        t("questions.2.answer"),
     },
     {
-      question: "¿Qué horarios de atención tiene Dental Bueno?",
+      question: t("questions.3.question"),
       answer:
-        "Nuestro horario de atención es de lunes a viernes de 8:00 a 18:00 horas.",
+        t("questions.3.answer"),
     },
     {
-      question: "¿Qué métodos de pago aceptan?",
-      answer: "Aceptamos pagos en efectivo, tarjetas de crédito y débito.",
+      question: t("questions.4.question"),
+      answer: t("questions.4.answer"),
     },
   ];
 
@@ -164,7 +166,7 @@ export default function Faq3() {
       />
 
       <div className="relative max-w-7xl mx-auto px-4 z-20">
-        <TitleSection title="Preguntas **Frecuentes**" />
+        <TitleSection title={t("title")} />
 
         <div className="mx-auto max-w-2xl space-y-2">
           {faqs.map((faq, index) => (
@@ -182,16 +184,16 @@ export default function Faq3() {
             <Mail className="h-4 w-4" />
           </div>
           <p className="text-foreground mb-1 text-sm font-medium">
-            Aún tienes preguntas?
+            {t("contactText")}
           </p>
           <p className="text-muted-foreground mb-4 text-xs">
-            Estamos aquí para ayudarte
+            {t("contactText2")}
           </p>
           <Button
             variant="outline"
             className="hover:text-foreground hover:scale-105 hover:cursor-pointer"
           >
-            Contactar
+            {t("btnText")}
             <WhatsAppIcon />
           </Button>
         </motion.div>

@@ -11,6 +11,7 @@ import {
   Map,
   Clock,
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface StatItemProps {
   value: number;
@@ -29,7 +30,7 @@ const StatItem = ({
   delay = 0,
   decimalPlaces = 0,
   color = 'from-primary to-primary/70',
-  startValue = 0,
+  startValue = 100,
 }: StatItemProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -80,40 +81,41 @@ const StatItem = ({
 };
 
 export default function AboutUs2() {
+  const t = useTranslations("about.stats");
   const stats = [
     {
-      value: 5000,
-      startValue: 4982,
-      label: 'Pacientes satisfechos',
+      value: 999,
+      startValue: 800,
+      label: t('satisfiedPatients'),
       icon: <Users className="h-5 w-5" />,
-      delay: 0,
+      delay: 0.1,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
       value: 15,
       startValue: 12,
-      label: 'Años de experiencia',
+      label: t('yearsOfExperience'),
       icon: <Clock className="h-5 w-5" />,
-      delay: 0.1,
+      delay: 0.2,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
       value: 5,
       startValue: 3,
-      label: 'Sucursales',
+      label: t('branches'),
       icon: <Map className="h-5 w-5" />,
-      delay: 0.2,
+      delay: 0.3,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },
     {
       value: 24,
       startValue: 22,
-      label: 'Premios ganados',
+      label: t('awardsWon'),
       icon: <Award className="h-5 w-5" />,
-      delay: 0.3,
+      delay: 0.4,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
     },

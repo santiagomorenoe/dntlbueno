@@ -19,7 +19,7 @@ const textVariants: Variants = {
   visible: (idx: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut", delay: 0.3 * idx },
+    transition: { duration: 0.5, ease: "easeOut", delay: 0.3 * idx, staggerChildren: 0.1 },
   }),
 }
 
@@ -71,7 +71,7 @@ export const ServicesCards: React.FC<ServicesCardsProps> = ({ steps }) => {
           </motion.h3>
           {/* Descripción animada */}
           <motion.p
-            className="text-base text-foreground/75 text-center z-10"
+            className="text-base text-foreground/75 text-left pl-2 z-10"
             variants={textVariants}
             initial="hidden"
             whileInView="visible"

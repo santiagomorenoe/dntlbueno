@@ -6,6 +6,7 @@ import { ChevronRight, Star } from "lucide-react";
 import { Marquee } from "@/components/ui/maquee";
 import { TitleSection } from "./ui/title-section";
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 export function Highlight({
   children,
@@ -83,151 +84,133 @@ export function TestimonialCard({
     </div>
   );
 }
-const testimonials = [
+
+export default function Testimonials() {
+  const t = useTranslations("testimonials.patients");
+  const t2 = useTranslations("testimonials");
+  const testimonials = [
     {
-      name: "Eric González",
-      role: "Paciente de la sucursal de Polanco",
+      name: t("0.name"),
+      role: t("0.role"),
       img: "https://randomuser.me/api/portraits/men/22.jpg",
       description: (
         <p>
-          La experiencia fue impecable, desde la primera consulta hasta el
-          seguimiento final.
-          <Highlight>
-            Me brindaron confianza en cada paso.
-          </Highlight>{" "}
-          Definitivamente recomiendo sus servicios.
+          {t("0.description")}
+          <Highlight>{t("0.highlight")}</Highlight>
+          {t("0.description")}
         </p>
       ),
     },
     {
-      name: "Maya Rodriguez",
-      role: "Paciente de la sucursal de Cuautitlan Izcalli",
+      name: t("1.name"),
+      role: t("1.role"),
       img: "https://randomuser.me/api/portraits/women/33.jpg",
       description: (
         <p>
-          Quedé impresionada con la tecnología y la dedicación del equipo.
-          <Highlight>
-            Todo el proceso fue transparente y claro.
-          </Highlight>{" "}
-          Me sentí acompañada en todo momento.
+          {t("1.description")}
+          <Highlight>{t("1.highlight")}</Highlight>{" "}
+          {t("1.description")}
         </p>
       ),
     },
     {
-      name: "Rafael Pérez",
-      role: "Paciente de la sucursal de Bosques",
+      name: t("2.name"),
+      role: t("2.role"),
       img: "https://randomuser.me/api/portraits/men/32.jpg",
       description: (
         <p>
-          Nunca había recibido una atención tan detallada y humana.
-          <Highlight>
-            Cada pregunta fue respondida con paciencia y claridad.
-          </Highlight>{" "}
-          El resultado superó mis expectativas.
+          {t("2.description")}
+          <Highlight>{t("2.highlight")}</Highlight>{" "}
+          {t("2.description")}
         </p>
       ),
     },
     {
-      name: "Ana López",
-      role: "Paciente de la sucursal de Coacalco",
+      name: t("3.name"),
+      role: t("3.role"),
       img: "https://randomuser.me/api/portraits/women/44.jpg",
       description: (
         <p>
-          Me encantó la rapidez y la organización de todo el servicio.
-          <Highlight>
-            Sentí que realmente se adaptaron a mis necesidades.
-          </Highlight>{" "}
-          Ahora confío plenamente en ellos.
+          {t("3.description")}
+          <Highlight>{t("3.highlight")}</Highlight>{" "}
+          {t("3.description")}
         </p>
       ),
     },
     {
-      name: "Juan Pérez",
-      role: "Paciente de la sucursal de Valle Dorado",
+      name: t("4.name"),
+      role: t("4.role"),
       img: "https://randomuser.me/api/portraits/men/55.jpg",
       description: (
         <p>
-          Lo que más destaco es la combinación de profesionalismo y calidez.
-          <Highlight>
-            No solo resolvieron mi problema, sino que me hicieron sentir cómodo.
-          </Highlight>{" "}
-          Fue una gran decisión elegirlos.
+          {t("4.description")}
+          <Highlight>{t("4.highlight")}</Highlight>{" "}
+          {t("4.description")}
         </p>
       ),
     },
     {
-      name: "María Gómez",
-      role: "Paciente de la sucursal de Pirules",
+      name: t("5.name"),
+      role: t("5.role"),
       img: "https://randomuser.me/api/portraits/women/67.jpg",
       description: (
         <p>
-          La atención al detalle es sorprendente.
-          <Highlight>
-            Cada aspecto del servicio estuvo cuidado al máximo.
-          </Highlight>{" "}
-          Es difícil encontrar tanta dedicación hoy en día.
+          {t("5.description")}
+          <Highlight>{t("5.highlight")}</Highlight>{" "}
+          {t("5.description")}
         </p>
       ),
     },
     {
-      name: "Carlos Rodríguez",
-      role: "Paciente de la sucursal de Coacalco",
+      name: t("6.name"),
+      role: t("6.role"),
       img: "https://randomuser.me/api/portraits/men/78.jpg",
       description: (
         <p>
-          Me impresionó la innovación que aplican en su trabajo.
-          <Highlight>
-            Ofrecen soluciones modernas con un toque humano.
-          </Highlight>{" "}
-          Fue una experiencia que recomendaría sin dudar.
+          {t("6.description")}
+          <Highlight>{t("6.highlight")}</Highlight>{" "}
+          {t("6.description")}
         </p>
       ),
     },
     {
-      name: "Laura Hernández",
-      role: "Paciente de la sucursal de Polanco",
+      name: t("7.name"),
+      role: t("7.role"),
       img: "https://randomuser.me/api/portraits/women/89.jpg",
       description: (
         <p>
-          Lo que más me gustó fue la cercanía del equipo.
-          <Highlight>
-            Nunca sentí que era solo “un cliente más”.
-          </Highlight>{" "}
-          Se nota que disfrutan lo que hacen.
+          {t("7.description")}
+          <Highlight>{t("7.highlight")}</Highlight>{" "}
+          {t("7.description")}
         </p>
       ),
     },
     {
-      name: "Pedro García",
-      role: "Paciente de la sucursal de Cuautitlan Izcalli",
+      name: t("8.name"),
+      role: t("8.role"),
       img: "https://randomuser.me/api/portraits/men/92.jpg",
       description: (
         <p>
-          La experiencia fue excelente en todos los aspectos.
-          <Highlight>
-            Me ofrecieron confianza y resultados sobresalientes.
-          </Highlight>{" "}
-          Superaron mis expectativas desde el inicio.
+          {t("8.description")}
+          <Highlight>{t("8.highlight")}</Highlight>{" "}
+          {t("8.description")}
         </p>
       ),
     },
     {
-      name: "Sofía López",
-      role: "Paciente de la sucursal de Bosques",
+      name: t("9.name"),
+      role: t("9.role"),
       img: "https://randomuser.me/api/portraits/women/29.jpg",
       description: (
         <p>
-          La profesionalidad y el trato humano marcaron la diferencia.
-          <Highlight>
-            Me explicaron cada detalle con mucha claridad.
-          </Highlight>{" "}
-          Sin duda volveré a contar con sus servicios.
+          {t("9.description")}
+          <Highlight>{t("9.highlight")}</Highlight>{" "}
+          {t("9.description")}
         </p>
       ),
     },
-  ];  
+  ];
 
-export default function Testimonials() {
   return (
     <div className="w-full bg-background overflow-hidden">
       <section className="relative max-w-7xl mx-auto py-10 w-full">
@@ -235,7 +218,7 @@ export default function Testimonials() {
         <div className="absolute top-20 -left-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
         <div className="absolute -right-20 bottom-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
 
-        <TitleSection title="Nuestros **pacientes**" />
+        <TitleSection title={t2("title")} />
 
         <div className="relative max-h-screen overflow-hidden">
           <div className="gap-4 md:columns-2 xl:columns-3">
@@ -273,10 +256,13 @@ export default function Testimonials() {
         </div>
 
         <div className="flex justify-center">
-            <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out">
-                Ver todos los testimonios
-                <ChevronRight />
-            </Button>
+          <Button
+            variant="default"
+            className="hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+          >
+            {t2("btnText")}
+            <ChevronRight />
+          </Button>
         </div>
       </section>
     </div>

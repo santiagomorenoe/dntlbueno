@@ -89,7 +89,7 @@ export const TitleSection = ({
       {/* Título con texto destacado */}
       <motion.h2
         variants={textVariants}
-        className={`text-[24px] md:text-[30px] lg:text-[34px] font-normal font-josefin-sans first-letter:capitalize text-center`}
+        className={`text-[24px] md:text-[30px] lg:text-[34px] font-semibold font-inter first-letter:capitalize text-center`}
       >
         {title.split("\n").map((paragraph, index) => {
           const parts = paragraph.split(/(\*\*.*?\*\*|__.*?__)/g);
@@ -106,7 +106,7 @@ export const TitleSection = ({
                       <motion.span
                         variants={highlightVariants}
                         whileHover="hover"
-                        className={`inline-block pl-4 font-extrabold text-[40px] md:text-[46px] lg:text-[49px] font-josefin-sans uppercase cursor-text ${className}`}
+                        className={`inline-block pl-4 font-normal text-[40px] md:text-[46px] lg:text-[49px] font-josefin-sans uppercase cursor-text text-primary ${className}`}
                       >
                         {part.slice(2, -2)}
                       </motion.span>

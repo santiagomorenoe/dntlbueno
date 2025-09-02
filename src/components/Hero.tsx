@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { ArrowDown, Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroVideoDialog } from "./ui/video-dialog";
-import { data } from "@/app/[locale]/page";
+import { useTranslations } from "next-intl";
 
 const titleVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
@@ -16,27 +16,10 @@ const titleVariants: Variants = {
   },
 };
 
-const filteredSections = data.sections.filter((section) => section.active);
-
-const findNextSection = () => {
-  const currentSectionIndex = filteredSections.findIndex(
-    (section) => section.navbar_title === "Inicio"
-  );
-
-  if (
-    currentSectionIndex === -1 ||
-    currentSectionIndex === filteredSections.length - 1
-  ) {
-    return null;
-  }
-
-  return filteredSections[currentSectionIndex + 1];
-};
-
 const handleScrollDown = () => {
-  const nextSection = findNextSection();
+  const nextSection = "#about";
   if (nextSection) {
-    const element = document.getElementById(nextSection.navbar_title);
+    const element = document.getElementById(nextSection);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -44,6 +27,8 @@ const handleScrollDown = () => {
 };
 
 export default function Hero() {
+  const t = useTranslations("home.title");
+  const t2 = useTranslations("home.cta");
   return (
     <div className="bg-background h-dvh relative w-full overflow-hidden">
       <div className="absolute inset-0 z-0 overflow-hidden m-5 rounded-[30px] border-2 border-primary/20">
@@ -95,7 +80,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
           >
-            ¿Listo para sonreír sin límites?
+            {t("third")}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -110,7 +95,7 @@ export default function Hero() {
               className="group bg-primary text-primary-foreground hover:shadow-primary/30 relative overflow-hidden rounded-full px-6 shadow-lg transition-all duration-300 hover:cursor-pointer hover:scale-105 w-full md:w-fit"
             >
               <span className="relative z-10 flex items-center">
-                Dental Bueno cerca de ti
+                {t2("secondary")}
                 <MapPin className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </Button>
@@ -121,7 +106,7 @@ export default function Hero() {
               className="border-border bg-background/50 flex items-center gap-2 rounded-full backdrop-blur-sm hover:cursor-pointer hover:scale-105 w-full md:w-fit hover:text-foreground"
             >
               <Calendar className="h-4 w-4" />
-              Agendar cita
+              {t2("primary")}
             </Button>
           </motion.div>
 

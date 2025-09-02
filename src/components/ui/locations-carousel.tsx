@@ -8,7 +8,7 @@ import Image from "next/image";
 import { MapPinIcon, ClockIcon } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
+import { useTranslations } from "next-intl";
 
 interface Slide {
   img: string;
@@ -29,7 +29,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
   const [selected, setSelected] = React.useState(0);
   const [emblaApi, setEmblaApi] = React.useState<CarouselApi | null>(null);
   const carouselRef = React.useRef<HTMLDivElement>(null);
-
+  const t = useTranslations("locations");
   // Funciones seguras para navegación
   const handlePrev = () => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -62,7 +62,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
               className="cursor-grab active:cursor-grabbing"
             >
               <div
-                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-auto min-h-[520px] md:min-h-[600px] py-8 px-4 ${
+                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-[700px] py-8 px-4 ${
                   selected === idx
                     ? "opacity-100 z-10"
                     : "opacity-0 pointer-events-none z-0"
@@ -82,7 +82,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
                     alt={slide.title}
                     width={840}
                     height={820}
-                    className="rounded-2xl object-cover w-full max-w-[480px] h-[380px] hover:scale-105 transition-all duration-300"
+                    className="rounded-2xl object-cover w-full max-w-[480px] h-[280px] md:h-[380px] hover:scale-105 transition-all duration-300"
                     loading="lazy"
                     style={{
                       maskImage:
@@ -95,9 +95,9 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
                 {/* Etiqueta tipo */}
                 <div className="w-full grid grid-cols-2 items-start justify-center px-10 gap-4 mt-10">
                   {/* Features */}
-                  <div className="text-left font-inter text-base md:text-lg font-medium flex flex-col items-start gap-2 text-foreground">
-                    <div className="flex items-center flex-row gap-2 text-white dark:text-foreground">
-                      <MapPinIcon className="w-4 h-4" /> Dirección:
+                  <div className="text-left font-josefin-sans text-base md:text-lg font-medium flex flex-col items-start gap-2 text-foreground">
+                    <div className="flex items-center flex-row gap-2 text-white dark:text-foreground text-[16px] md:text-[18px]">
+                      <MapPinIcon className="w-4 h-4" /> {t("address")}:
                     </div>
                     <div>
                     {slide.address && (
@@ -107,10 +107,10 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
                     )}
                     </div>
                   </div>
-                  <div className="text-left font-inter text-base md:text-lg font-medium flex flex-col items-start gap-2">
+                  <div className="text-left font-josefin-sans text-base md:text-lg font-medium flex flex-col items-start gap-2">
                     {slide.schedule && (
-                      <div className="flex items-center flex-row gap-2 text-white dark:text-foreground">
-                        <ClockIcon className="w-4 h-4"/> Horario:
+                      <div className="flex items-center flex-row gap-2 text-white dark:text-foreground text-[16px] md:text-[18px]">
+                        <ClockIcon className="w-4 h-4"/> {t("schedule")}:
                       </div>
                     )}
                     {slide.schedule && (
@@ -125,8 +125,8 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="w-full flex items-center justify-center mt-10 max-w-full md:max-w-[50%] mx-auto z-10">
-          <div className="flex w-full rounded-full py-4 px-4 items-center justify-between bg-primary hover:scale-105 transition-all duration-300">
+        <div className="w-full flex items-center justify-center max-w-full mx-auto pt-2 z-10">
+          <div className="flex w-full rounded-3xl py-4 px-4 items-center justify-between bg-primary hover:scale-105 transition-all duration-300">
             <motion.button
               whileHover={{ scale: 1.4 }}
               whileTap={{ scale: 0.7 }}

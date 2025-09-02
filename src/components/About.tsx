@@ -4,17 +4,15 @@ import type React from "react";
 import { motion, Variants } from "framer-motion";
 import AboutUs2 from "./ui/about-cards";
 import { TitleSection } from "./ui/title-section";
+import { useTranslations } from "next-intl";
 
 const data = {
-  title: "Sonrisa con **B de Bueno**",
-  btnText: "¡Agenda tu cita!",
-  description:
-    "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento odontológico completo y personalizado.",
   pattern: "/images/teethPattern.svg",
   img: "/images/about.jpg",
 };
 
 export const About: React.FC = () => {
+  const t = useTranslations("about");
   return (
     <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-gradient-to-b from-primary to-primary">
       <div
@@ -40,23 +38,21 @@ export const About: React.FC = () => {
       <div className="relative z-30 max-w-7xl mx-auto">
         <div className="lg:flex lg:items-center lg:gap-12 xl:gap-20">
           <div className="max-w-2xl lg:w-1/2 mb-12 lg:mb-0">
-            <TitleSection title={data.title}  className="text-white" />
+            <TitleSection title={t("title")}  className="text-white" />
 
             <p
               className="text-lg lg:text-xl mb-8 leading-relaxed text-white"
             >
-              {data.description}
+              {t("description")}
             </p>
             
             <AboutUs2 />
           </div>
 
           <div className="relative overflow-hidden lg:w-1/2 hover:scale-105 transition-all duration-300 hover:cursor-text">
-            <motion.img
+            <img
               src={data.img}
               alt="niña siendo atendida por un especialista de la clinica"
-              width={1200}
-              height={875}
               className="w-full h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-tr-[90px] rounded-bl-[90px] rounded-tl-none rounded-br-none"
               loading="lazy"
             />

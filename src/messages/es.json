@@ -1,107 +1,263 @@
 {
-    "common": {
-      "theme": {
-        "light": "Claro",
-        "dark": "Oscuro", 
-        "system": "Sistema",
-        "toggleTheme": "Cambiar tema"
-      },
-      "navigation": {
-        "home": "Inicio",
-        "services": "Servicios",
-        "products": "Productos",
-        "contact": "Contacto",
-        "testimonials": "Testimonios",
-        "pricing": "Precios"
-      },
-      "actions": {
-        "save": "Guardar",
-        "cancel": "Cancelar",
-        "delete": "Eliminar",
-        "edit": "Editar",
-        "create": "Crear",
-        "search": "Buscar"
-      }
+  "common": {
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema",
+      "toggleTheme": "Cambiar tema"
     },
-    "home": {
-      "title": {
-        "first": "Bienvenido a",
-        "second": "Syntora"
-      },
-      "subtitle": "Despega con nuestras soluciones",
-      "description": "Creamos experiencias digitales excepcionales que impulsan el crecimiento de tu negocio",
-      "founder": "Desarrollado por",
-      "cta": {
-        "primary": "Descargar mi CV",
-        "secondary": "Mi Linkedin"
-      }
+    "navigation": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "testimonials": "Testimonios",
+      "faq": "Preguntas Frecuentes",
+      "scheduling": "Agendar"
     },
-    "bento": {
-      "services": [
-        {
-          "title": "Desarrollo web",
-          "description": "Creamos aplicaciones web modernas y responsivas optimizadas para motores de búsqueda y experiencia del usuario.",
-          "link": "/services/web-development"
-        },
-        {
-          "title": "Desarrollo móvil",
-          "description": "Creamos aplicaciones móviles únicas y personalizadas para tus necesidades.",
-          "link": "/services/mobile-development"
-        },
-        {
-          "title": "Desarrollo de software personalizado",
-          "description": "Creamos soluciones de software personalizadas que se optimizan para el rendimiento y la escalabilidad. Podemos ayudarte con tus necesidades de negocio.",
-          "link": "/services/custom-software-development"
-        },
-        {
-          "title": "Desarrollo de IA",
-          "description": "Creamos soluciones de IA personalizadas que se optimizan para el rendimiento y la escalabilidad.",
-          "link": "Muy pronto"
-        },
-        {
-          "title": "Diseño UI/UX",
-          "description": "Creamos interfaces de usuario a medida para cualquiera de tus necesidades.",
-          "link": "/services/ui-ux-design"
-        },
-        {
-          "title": "Soporte y mantenimiento",
-          "description": "Ofrecemos soporte y mantenimiento continuo para tus soluciones de software para asegurar que siempre funcionen correctamente. También podemos ayudarte a mejorar tu sitio web.",
-          "link": "/services/support-and-maintenance"
-        }
-      ]
-    },
-    "tecnologies": {
-      "title": "De la mano de las mejores tecnologías.",
-      "description": "Nuestros servicios."
-    },
-    "services": {
-      "title": "Nuestros servicios",
-      "webDevelopment": {
-        "title": "Desarrollo web",
-        "description": "Sitios web modernos y responsivos"
-      },
-      "digitalMarketing": {
-        "title": "Marketing digital",
-        "description": "Estrategias de marketing efectivas"
-      },
-      "seo": {
-        "title": "SEO",
-        "description": "Optimización para motores de búsqueda"
-      }
-    },
-    "projects": {
-      "title": "Proyectos",
-      "descriptions": ["Recreé el sitio web de Apple iPhone 15 Pro, combinando animaciones GSAP y efectos 3D de Three.js.", "Desarrollé una aplicación de entrega de comida full stack usando React Native, Expo y TypeScript.", "Desarrollé un traductor AI usando React, Next.js, JavaScript, Gemini API y Tailwind CSS.", "Desarrollé una landing page para mostrar mis habilidades de diseño ayudando a algunas empresas a crear su propio sitio web."],
-      "checkLive": "Ver",
-      "comingSoon": "Próximamente"
-    },
-    "contact": {
-      "title": "Desarrollado por Santi Moreno, desarrollador de software, estudiante de ingeniería en IA y fundador de Syntora.",
-      "form": {
-        "updates": "actualizaciones",
-        "product": "producto",
-        "enterprise": "empresa",
-        "contact": "contacto"
-      }
+    "actions": {
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "edit": "Editar",
+      "create": "Crear",
+      "search": "Buscar"
     }
-  }
+  },
+  "home": {
+    "title": {
+      "first": "Dental Bueno",
+      "second": "Dental Bueno",
+      "third": "¿Listo para sonreír sin límites?"
+    },
+    "cta": {
+      "primary": "Agenda tu cita",
+      "secondary": "Dental Bueno cerca de ti"
+    }
+  },
+  "about": {
+    "title": "Sonríe con **B de Bueno**",
+    "description": "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento dental completo y personalizado.",
+    "stats": {
+      "satisfiedPatients": "Pacientes Satisfechos",
+      "yearsOfExperience": "Años de Experiencia",
+      "branches": "Sucursales",
+      "awardsWon": "Premios Ganados"
+    }
+  },
+  "services": {
+    "title": "**Servicios** Especializados",
+    "btnText": "Ver todos los servicios",
+    "services": [
+      {
+        "title": "Diseño Dental",
+        "description": "Mejora la apariencia de tu sonrisa, alineando el color, la forma y el tamaño de tus dientes para una apariencia armoniosa."
+      },
+      {
+        "title": "Implantes Dentales",
+        "description": "Recupera tu sonrisa con implantes dentales duraderos. Soluciones de alta calidad para restaurar la funcionalidad y estética."
+      },
+      {
+        "title": "Ortodoncia Dental",
+        "description": "Alinea tus dientes y mejora tu salud oral con ortodoncia moderna. Consigue una sonrisa perfecta con resultados excepcionales."
+      },
+      {
+        "title": "Turismo Médico",
+        "description": "Combina tu tratamiento dental con unas vacaciones. Disfruta de una atención exclusiva en un entorno relajante y memorable."
+      },
+      {
+        "title": "Radiología",
+        "description": "Diagnósticos precisos con tecnología avanzada. Obtenemos imágenes de alta calidad para un tratamiento dental completo."
+      },
+      {
+        "title": "Cirugía Dental",
+        "description": "Procedimientos especializados para resolver problemas complejos. Nuestros expertos garantizan un cuidado oral seguro y completo."
+      },
+      {
+        "title": "Odontopediatría",
+        "description": "Cuidado de la salud oral para niños. Fomentamos hábitos saludables y una experiencia positiva, segura y divertida para los más pequeños."
+      },
+      {
+        "title": "Periodoncia",
+        "description": "Tratamiento especializado para encías saludables. Prevenimos enfermedades y ofrecemos soluciones duraderas para tu salud oral."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Nuestros **pacientes**",
+    "btnText": "Ver todos los testimonios",
+    "patients": [
+      {
+        "name": "Eric González",
+        "role": "Paciente de la sucursal Polanco",
+        "description": "La experiencia fue impecable, desde la primera consulta hasta el seguimiento final.",
+        "highlight": "experiencia fue impecable, desde la primera consulta hasta el seguimiento final."
+      },
+      {
+        "name": "Maya Rodriguez",
+        "role": "Paciente de la sucursal Cuautitlan Izcalli",
+        "description": "Me impresionó la tecnología y la dedicación del equipo.",
+        "highlight": "tecnología y dedicación del equipo."
+      },
+      {
+        "name": "Rafael Pérez",
+        "role": "Paciente de la sucursal Bosques",
+        "description": "Nunca recibí una atención tan detallada y humana.",
+        "highlight": "atención tan detallada y humana."
+      },
+      {
+        "name": "Ana López",
+        "role": "Paciente de la sucursal Coacalco",
+        "description": "Me encantó la rapidez y organización de todo el servicio.",
+        "highlight": "rapidez y organización de todo el servicio."
+      },
+      {
+        "name": "Juan Pérez",
+        "role": "Paciente de la sucursal Valle Dorado",
+        "description": "Sentí que realmente se adaptaron a mis necesidades.",
+        "highlight": "adaptaron a mis necesidades."
+      },
+      {
+        "name": "María Gómez",
+        "role": "Paciente de la sucursal Pirules",
+        "description": "No encontré tal dedicación hoy en día.",
+        "highlight": "dedicación hoy en día."
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "role": "Paciente de la sucursal Coacalco",
+        "description": "Me encantó la combinación de profesionalismo y calidez.",
+        "highlight": "combinación de profesionalismo y calidez."
+      },
+      {
+        "name": "Laura Hernández",
+        "role": "Paciente de la sucursal Polanco",
+        "description": "Me encantó la atención al detalle.",
+        "highlight": "atención al detalle."
+      },
+      {
+        "name": "Pedro García",
+        "role": "Paciente de la sucursal Cuautitlan Izcalli",
+        "description": "Estoy impresionado por la innovación que aplican en su trabajo.",
+        "highlight": "innovación que aplican en su trabajo."
+      },
+      {
+        "name": "Sofía López",
+        "role": "Paciente de la sucursal Bosques",
+        "description": "Ofrecen soluciones modernas con un toque humano.",
+        "highlight": "soluciones modernas con un toque humano."
+      }
+    ]
+  },
+  "locations": {
+    "title": "Nuestras **sucursales**",
+    "btnText": "Llamarnos",
+    "btnText2": "Encuentra la más cercana",
+    "address": "Dirección",
+    "schedule": "Horario",
+    "branches": [
+      {
+        "title": "Polanco",
+        "address": "Av. Polanco 123, Polanco, México",
+        "schedule": "Lunes a Viernes: 9:00 - 18:00"
+      },
+      {
+        "title": "Coacalco",
+        "address": "Av. de los Ejidos 123, Coacalco, México",
+        "schedule": "Lunes a Viernes: 9:00 - 18:00"
+      },
+      {
+        "title": "Cuautitlan Izcalli",
+        "address": "Av. Cuautitlan Izcalli 123, Cuautitlan Izcalli, México",
+        "schedule": "Lunes a Viernes: 9:00 - 18:00"
+      },
+      {
+        "title": "Pirules",
+        "address": "Av. Pirules 123, Pirules, México",
+        "schedule": "Lunes a Viernes: 9:00 - 18:00"
+      },
+      {
+        "title": "Valle Dorado",
+        "address": "Av. Valle Dorado 123, Valle Dorado, México",
+        "schedule": "Lunes a Viernes: 9:00 - 18:00"
+      },
+      {
+        "title": "Bosques",
+        "address": "Próximamente...",
+        "schedule": "Próximamente..."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Nuestras **Preguntas Frecuentes**",
+    "contactText": "¿Aún tienes preguntas?",
+    "btnText": "Agenda tu cita",
+    "contactText2": "Estamos aquí para ayudarte",
+    "questions": [
+      {
+        "question": "¿Qué hace único a Dental Bueno?",
+        "answer": "Dental Bueno es una clínica dental que ofrece servicios de calidad a un precio accesible. Contamos con un equipo de profesionales altamente capacitados y la última tecnología en procedimientos dentales, para que puedas tener un tratamiento dental completo y personalizado."
+      },
+      {
+        "question": "¿Qué servicios ofrece Dental Bueno?",
+        "answer": "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento dental completo y personalizado."
+      },
+      {
+        "question": "¿Cómo puedo agendar una cita?",
+        "answer": "Puedes agendar una cita a través de nuestro sitio web o llamando a nuestro centro de servicio al cliente."
+      },
+      {
+        "question": "¿Qué horario de atención tiene Dental Bueno?",
+        "answer": "Nuestro horario de atención es de Lunes a Viernes de 8:00 a 18:00 horas."
+      },
+      {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos efectivo, tarjetas de crédito y débito."
+      }
+    ]
+  },
+  "footer": {
+    "title": "Nuestras **Redes Sociales**",
+    "description": "Somos la mejor clínica dental en el corazón de México. Cambia tu sonrisa y tu vida.",
+    "btnText": "Síguenos",
+    "copyright": "© 2025 Dental Bueno. Todos los derechos reservados.",
+    "columns": [
+      {
+        "title": "Soluciones",
+        "links": [
+          "Automatización Empresarial",
+          "Servicios en la Nube",
+          "Analítica",
+          "Integraciones",
+          "Soporte"
+        ]
+      },
+      {
+        "title": "Recursos",
+        "links": [
+          "Documentación",
+          "Casos de Estudio",
+          "Blog",
+          "Seminarios Web",
+          "Comunidad"
+        ]
+      },
+      {
+        "title": "Empresa",
+        "links": [
+          "Sobre Nosotros",
+          "Carreras",
+          "Contacto",
+          "Socios",
+          "Prensa"
+        ]
+      }
+    ],
+    "legalLinks": [
+      "Términos de Servicio",
+      "Política de Privacidad",
+      "Configuración de Cookies",
+      "Accesibilidad"
+    ]
+  } 
+}

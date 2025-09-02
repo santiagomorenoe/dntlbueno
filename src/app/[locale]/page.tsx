@@ -10,38 +10,6 @@ import Faq from '@/components/Faq';
 import FooterNewsletter from '@/components/Footer';
 import { Locations } from '@/components/Locations';
  
-export const data: ContentData = {
-  navbar: {
-    btnText: 'Agenda tu cita',
-  },
-  sections: [
-    {
-      active: true,
-      navbar_active: true,
-      navbar_title: 'Inicio',
-    },
-    {
-      active: true,
-      navbar_active: true,
-      navbar_title: 'Servicios',
-    },  
-    {
-      active: true,
-      navbar_active: true,
-      navbar_title: 'Nosotros',
-    },
-    {
-      active: true,
-      navbar_active: true,
-      navbar_title: 'Testimonios',
-    },
-    {
-      active: true,
-      navbar_active: true,
-      navbar_title: 'Blog',
-    }
-  ],
-};
 
 export default function Home() {
   const t = useTranslations();
@@ -49,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
 
-      <Navbar data={data.navbar} sections={data.sections} />
+      <Navbar />
       <Hero />
       <About />
       <Services />
