@@ -36,10 +36,9 @@ export const WhatsAppIcon = () => (
 );
 
 const navbarVariants: Variants = {
-  hidden: { opacity: 0, y: -20 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    y: 0,
     transition: {
       duration: 0.5,
       ease: "easeOut",
@@ -207,7 +206,7 @@ export const Navbar: React.FC = () => {
   return (
     <div>
       <motion.div
-        className={`w-full fixed left-0 right-0 flex items-center justify-between px-5 sm:px-8 lg:px-16 z-40 transition-all duration-300 ease-in-out ${
+        className={`w-full fixed left-0 right-0 flex items-center justify-between px-5 sm:px-8 lg:px-16 z-50 transition-all duration-300 ease-in-out ${
           menuOpen ? "" : navbarBackgroundClass
         } py-4 md:py-5`}
         initial="hidden"
@@ -268,7 +267,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <motion.div
-          className={`xl:hidden z-40 rounded-full flex flex-row-reverse gap-4 items-center hover:cursor-pointer px-6`}
+          className={`xl:hidden z-50 rounded-full flex flex-row-reverse gap-4 items-center hover:cursor-pointer px-6`}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           <motion.span
@@ -301,7 +300,7 @@ export const Navbar: React.FC = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className={`fixed inset-0 w-full ${mobileMenuBgClass} z-40 xl:hidden`}
+            className={`fixed inset-0 w-full ${mobileMenuBgClass} z-50 xl:hidden`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

@@ -62,7 +62,7 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
               className="cursor-grab active:cursor-grabbing"
             >
               <div
-                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-[700px] py-8 px-4 ${
+                className={`flex flex-col justify-center items-center bg-primary rounded-3xl overflow-hidden transition-all duration-500 w-full h-[500px] md:h-[700px] py-8 px-4 ${
                   selected === idx
                     ? "opacity-100 z-10"
                     : "opacity-0 pointer-events-none z-0"

@@ -55,16 +55,13 @@ export const Locations: React.FC = () => {
         <div className="w-full container mx-auto px-6 flex flex-col items-start justify-center md:flex-row gap-10">
             <div className="w-full md:w-2/4 flex flex-col items-center justify-center mx-auto md:sticky md:top-24 ">
                 <TitleSection title={t("title")} />
-                <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 -mt-10 relative">
+                <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 -mt-10 relative hidden md:block">
                     <Phone />
                     {t("btnText")}
                 </Button>
             </div>
             <div className="w-full md:w-2/4">
                 <LocationsCarousel slides={locations} />
-                <div className="w-full flex md:hidden flex-col items-center justify-center max-w-[300px] mx-auto hover:scale-105 transition-all duration-300 mt-10">
-                    <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300">{t("btnText2")}</Button>
-                </div> 
             </div>
         </div>
     </section>
