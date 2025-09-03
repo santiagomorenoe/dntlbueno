@@ -215,6 +215,14 @@ body::-webkit-scrollbar {
   background-color: transparent;
 }
 
+.dark body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
+.dark body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+}
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }

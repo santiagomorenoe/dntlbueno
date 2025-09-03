@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
   const t = useTranslations("common.navigation");
   const data: ContentData = {
     navbar: {
-      btnText: "Agenda tu cita",
+      btnText: t("scheduling"),
     },
     sections: [
       {
