@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 interface CardData {
   title: string;
@@ -19,9 +20,23 @@ const textVariants: Variants = {
   visible: (idx: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut", delay: 0.3 * idx, staggerChildren: 0.1 },
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+      delay: 0.3 * idx,
+      staggerChildren: 0.1,
+    },
   }),
-}
+};
+
+const imgVariants = {
+  initial: { scale: 0.8, opacity: 0 },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: { delay: 0.3, duration: 0.6, type: "spring" as const },
+  },
+};
 
 export const ServicesCards: React.FC<ServicesCardsProps> = ({ steps }) => {
   const [isHovered, setIsHovered] = useState<number | null>(null);
@@ -52,16 +67,22 @@ export const ServicesCards: React.FC<ServicesCardsProps> = ({ steps }) => {
             aria-hidden="true"
           />
           {/* Imagen principal animada */}
-          <motion.img
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 * idx }}
-            src={step.img}
-            alt={step.title}
-            className={`w-32 h-30 mb-6 z-10 duration-300 ease-in-out ${
-              isHovered && idx === isHovered ? "scale-[1.1]" : ""
-            }`}
-          />
+          <motion.div
+            className="w-32 h-30 mb-6 z-10 duration-300 ease-in-out relative"
+            variants={imgVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            <Image
+              src={step.img}
+              alt={step.title}
+              className={`w-full h-full object-cover ${
+                isHovered && idx === isHovered ? "scale-[1.1]" : ""
+              }`}
+              loading="lazy"
+              fill
+            />
+          </motion.div>
           {/* Título animado */}
           <motion.h3
             className="text-2xl font-semibold text-foreground mb-3 text-center z-10"
