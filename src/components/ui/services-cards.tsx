@@ -55,7 +55,7 @@ export const ServicesCards: React.FC<ServicesCardsProps> = ({ steps }) => {
           <motion.img
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 * idx }}
+            transition={{ duration: 0.5, delay: 0.3 * idx }}
             src={step.img}
             alt={step.title}
             className={`w-32 h-30 mb-6 z-10 duration-300 ease-in-out ${
