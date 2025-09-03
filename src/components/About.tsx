@@ -14,7 +14,7 @@ const data = {
 export const About: React.FC = () => {
   const t = useTranslations("about");
   return (
-    <section className="relative py-12 md:py-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-gradient-to-b from-primary to-primary">
+    <section className="relative pt-32 pb-12 px-4 md:px-8 lg:px-16 overflow-hidden bg-gradient-to-b from-primary to-primary" id="about">
       <div
         className="absolute inset-0 w-full h-full z-20 bg-black/70"
         style={{

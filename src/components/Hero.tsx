@@ -30,7 +30,7 @@ export default function Hero() {
   const t = useTranslations("home.title");
   const t2 = useTranslations("home.cta");
   return (
-    <div className="bg-background h-dvh relative w-full overflow-hidden">
+    <div className="bg-background h-dvh relative w-full overflow-hidden" id="home">
       <div className="absolute inset-0 z-0 overflow-hidden m-5 rounded-[30px] border-2 border-primary/20">
         <div className="absolute inset-0 bg-black/45 backdrop-blur-xs z-10" />
         <motion.img
@@ -92,7 +92,7 @@ export default function Hero() {
           >
             <Button
               size="lg"
-              className="group bg-primary text-primary-foreground hover:shadow-primary/30 relative overflow-hidden rounded-full px-6 shadow-lg transition-all duration-300 hover:cursor-pointer hover:scale-105 w-full md:w-fit"
+              className="group bg-primary text-white dark:text-white hover:shadow-primary/30 relative overflow-hidden rounded-full px-6 shadow-lg transition-all duration-300 hover:cursor-pointer hover:scale-105 w-full md:w-fit"
             >
               <span className="relative z-10 flex items-center">
                 {t2("secondary")}
@@ -112,13 +112,13 @@ export default function Hero() {
 
           {/* Feature Image */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
               delay: 0.5,
               type: "spring",
-              stiffness: 50,
+              stiffness: 30,
             }}
             className="hidden md:block relative mx-auto mt-10 md:mt-26"
           >

@@ -55,7 +55,7 @@ export const Locations: React.FC = () => {
         <div className="w-full container mx-auto px-6 flex flex-col items-start justify-center md:flex-row gap-10">
             <div className="w-full md:w-2/4 flex flex-col items-center justify-center mx-auto md:sticky md:top-24 ">
                 <TitleSection title={t("title")} />
-                <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 -mt-10 relative hidden md:block">
+                <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 -mt-10 relative hidden md:flex">
                     <Phone />
                     {t("btnText")}
                 </Button>
