@@ -140,8 +140,8 @@ export const Navbar: React.FC = () => {
     ? "backdrop-blur-xs bg-background/90 top-0"
     : "bg-background/0 top-6";
   const navbarTextClass = scrolled
-    ? "text-primary"
-    : "text-white dark:text-foreground";
+    ? "text-black dark:text-foreground"
+    : "text-white  dark:text-foreground";
   const mobileMenuBgClass = scrolled
     ? "bg-background/90 backdrop-blur-xs h-dvh"
     : "backdrop-blur-xs bg-background/80 h-dvh";
@@ -215,7 +215,7 @@ export const Navbar: React.FC = () => {
       >
         {renderLogo()}
 
-        <div className="flex items-center gap-8">
+        <div className="flex items-center justify-center gap-8">
           {/* Desktop Navigation */}
           <nav className="hidden xl:flex items-center">
             <ul className="flex space-x-4 lg:space-x-6">
@@ -267,7 +267,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <motion.div
-          className={`xl:hidden z-50 rounded-full flex flex-row-reverse gap-4 items-center hover:cursor-pointer px-6`}
+          className={`xl:hidden z-50 rounded-full flex flex-row-reverse gap-4 items-center justify-center hover:cursor-pointer px-6`}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           <motion.span

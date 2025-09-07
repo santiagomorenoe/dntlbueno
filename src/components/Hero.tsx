@@ -120,13 +120,13 @@ export default function Hero() {
               type: "spring",
               stiffness: 30,
             }}
-            className="hidden md:block relative mx-auto mt-10 md:mt-26"
+            className="hidden md:block relative mx-auto mt-8"
           >
             <HeroVideoDialog
               className="w-full max-w-[90.5%] mx-auto z-[10000]"
               animationStyle="top-in-bottom-out"
               videoSrc="https://www.youtube.com/embed/yvKDsUxq8V0?si=eawyBvja-A5fuFGL"
-              thumbnailSrc="https://scontent.fmex46-1.fna.fbcdn.net/v/t39.30808-6/494540791_1186416466828635_1711051903417352597_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEgcloL9otE3jtFmbLuM55C7U32G9BHNHXtTfYb0Ec0dQt-VPk5RXOps4X9gR6WFo_fvR-PqRAb0rEWIXjS1j-9&_nc_ohc=6VpLZ9-5VcUQ7kNvwGaNSVe&_nc_oc=AdnpQZKtkOZ7ByCJrJ5f-bcinJ94vAHK26cOxp7yfH6AaJt-kUlhq8xhZiNTDDdHnboSxrPvWiuFnXDipAvBL9Pi&_nc_zt=23&_nc_ht=scontent.fmex46-1.fna&_nc_gid=ucqulPMusRDkTthn24dy0A&oh=00_AfUiGjZ-bko1kGUcKPC5M57nm1ZS7zUtePJSXf6tfnYIHQ&oe=68B9B681"
+              thumbnailSrc="/images/overview.jpg"
               thumbnailAlt="Hero Video"
             />
           </motion.div>

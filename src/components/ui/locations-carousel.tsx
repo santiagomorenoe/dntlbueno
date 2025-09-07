@@ -126,15 +126,15 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
           ))}
         </CarouselContent>
         <div className="w-full flex items-center justify-center max-w-full mx-auto pt-2 z-10">
-          <div className="flex w-full rounded-3xl py-4 px-4 items-center justify-between bg-primary hover:scale-105 transition-all duration-300">
+          <div className="flex w-full rounded-3xl py-4 px-4 items-center justify-between  hover:scale-105 transition-all duration-300">
             <motion.button
               whileHover={{ scale: 1.4 }}
               whileTap={{ scale: 0.7 }}
-              className="rounded-full border-none text-foreground mx-2 hover:cursor-pointer"
+              className="rounded-full border-none text-primary mx-2 hover:cursor-pointer"
               onClick={handlePrev}
               type="button"
             >
-              <ArrowLeft className="w-5 h-5" color="#FFF" />
+              <ArrowLeft className="w-5 h-5" color="var(--primary)" />
             </motion.button>
             {/* Navegación por puntos */}
             <div className="w-fit flex justify-center items-center gap-2 select-none bg-white rounded-full px-4 py-3 hover:scale-105 transition-all duration-300">
@@ -152,11 +152,11 @@ export const LocationsCarousel: React.FC<LocationsCarouselProps> = ({
             <motion.button
               whileHover={{ scale: 1.4 }}
               whileTap={{ scale: 0.7 }}
-              className="rounded-full border-none text-foreground mx-2 hover:cursor-pointer"
+              className="rounded-full border-none text-primary mx-2 hover:cursor-pointer"
               onClick={handleNext}
               type="button"
             >
-              <ArrowRight className="w-5 h-5" color="#FFF" />
+              <ArrowRight className="w-5 h-5" color="var(--primary)" />
             </motion.button>
           </div>
         </div>
