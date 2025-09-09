@@ -31,7 +31,7 @@ export default function Hero() {
   const t2 = useTranslations("home.cta");
   return (
     <div className="bg-background h-dvh relative w-full overflow-hidden" id="home">
-      <div className="absolute inset-0 z-0 overflow-hidden m-5 rounded-[30px] border-2 border-primary/20">
+      <div className="absolute inset-0 z-0 overflow-hidden mx-5 mt-0 mb-5 rounded-[30px] border-2 border-primary/20">
         <div className="absolute inset-0 bg-black/45 backdrop-blur-xs z-10" />
         <motion.img
           className="w-full h-full object-cover"

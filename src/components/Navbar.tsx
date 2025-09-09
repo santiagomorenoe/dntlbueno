@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
 
   const navbarBackgroundClass = scrolled
     ? "backdrop-blur-xs bg-background/90 top-0"
-    : "bg-background/0 top-6";
+    : "bg-background/0 top-8";
   const navbarTextClass = scrolled
     ? "text-black dark:text-foreground"
     : "text-white  dark:text-foreground";
