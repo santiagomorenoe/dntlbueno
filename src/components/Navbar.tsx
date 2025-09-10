@@ -173,6 +173,7 @@ export const Navbar: React.FC = () => {
   const handleNavItemClick = (link: string) => {
     if (link.startsWith("#")) {
       scrollToSection(link);
+      setMenuOpen(false);
     }
     handleItemClick();
   };

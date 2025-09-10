@@ -19,9 +19,9 @@ const titleVariants: Variants = {
 const handleScrollDown = () => {
   const nextSection = "#about";
   if (nextSection) {
-    const element = document.getElementById(nextSection);
+    const element = document.querySelector(nextSection);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 };
