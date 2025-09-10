@@ -24,7 +24,21 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Dental Bueno",
-  description: "Sistema dental profesional",
+  description: "Dental Bueno, la mejor opción para tu salud dental, con la mejor tecnología y el mejor equipo de profesionales.",
+  openGraph: {
+    title: "Dental Bueno",
+    description: "Dental Bueno, la mejor opción para tu salud dental, con la mejor tecnología y el mejor equipo de profesionales.",
+    images: '/images/dentalog.png',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Dental Bueno",
+    description: "Dental Bueno, la mejor opción para tu salud dental, con la mejor tecnología y el mejor equipo de profesionales.",
+    images: '/images/dentalog.png',
+  },
+  icons: {
+    icon: '/images/dentalog.png',
+  }
 };
 
 interface LocaleLayoutProps {
@@ -45,25 +59,6 @@ export default async function LocaleLayout({
 
   // Obtener mensajes para el locale actual
   const messages = await getMessages();
-
-  const metadata: Metadata = {
-    title: 'Santi Moreno',
-    description: 'Santi Moreno, software developer, student of AI engineering and founder of Syntora.',
-    openGraph: {
-      title: 'Santi Moreno',
-      description: 'Santi Moreno, software developer, student of AI engineering and founder of Syntora.',
-      images: '/og.jpg',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Santi Moreno',
-      description: 'Santi Moreno, software developer, student of AI engineering and founder of Syntora.',
-      images: '/og.jpg',
-    },
-    icons: {
-      icon: '/Vector.svg',
-    }
-  }
 
   return (
     <html lang={locale} suppressHydrationWarning>
