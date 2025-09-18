@@ -56,7 +56,7 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section className="pt-24 pb-12 w-full bg-background overflow-x-hidden" id="services">
+    <section className="pt-24 md:pt-32 pb-12 w-full bg-background overflow-x-hidden" id="services">
       <div className="flex flex-col gap-6 lg:gap-12 max-w-7xl mx-auto px-4">
         <TitleSection title={t("title")} />
         <ServicesCards steps={data} />

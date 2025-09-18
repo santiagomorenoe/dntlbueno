@@ -213,7 +213,7 @@ export default function Testimonials() {
 
   return (
     <div className="w-full bg-background overflow-hidden">
-      <section className="relative max-w-7xl mx-auto pt-24 pb-12 w-full" id="testimonials">
+      <section className="relative max-w-7xl mx-auto pt-24 md:pt-32 pb-12 w-full" id="testimonials">
         {/* Decorative elements */}
         <div className="absolute top-20 -left-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
         <div className="absolute -right-20 bottom-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />

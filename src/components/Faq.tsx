@@ -148,7 +148,7 @@ export default function Faq3() {
   ];
 
   return (
-    <section className="bg-background relative w-full overflow-hidden pt-24 pb-12" id="faq">
+    <section className="bg-background relative w-full overflow-hidden pt-24 md:pt-32 pb-12" id="faq">
       <div
         className="absolute inset-0 w-full h-full z-10 invert dark:invert-0"
         style={{  

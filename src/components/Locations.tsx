@@ -51,7 +51,7 @@ export const Locations: React.FC = () => {
     ]
 
     return ( 
-    <section className="w-full bg-background py-24" id="locations">
+    <section className="w-full bg-background pt-24 md:pt-32 pb-12" id="locations">
         <div className="w-full container mx-auto px-6 flex flex-col items-start justify-center md:flex-row gap-10">
             <div className="w-full md:w-2/4 flex flex-col items-center justify-center mx-auto md:sticky md:top-24 ">
                 <TitleSection title={t("title")} />
