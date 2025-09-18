@@ -10,7 +10,7 @@ export const WhatsAppBtn = () => {
   const [message, setMessage] = useState("");
   const [sucursal, setSucursal] = useState("");
   
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (name.trim() && message.trim() && sucursal.trim()) {
       const whatsappMessage = `Hola! Soy ${name}. Mi cita será en: ${sucursal}. Motivo de la cita: ${message}`;
