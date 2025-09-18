@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/images/dentalog.png',
+    apple: '/images/dentalog.png',
   }
 };
 

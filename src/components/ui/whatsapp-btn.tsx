@@ -43,7 +43,7 @@ export const WhatsAppBtn = () => {
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileTap={{ scale: 0.7 }}
-          className="bg-green-500 hover:bg-green-600 text-white p-1 md:p-2 rounded-full shadow-lg transition-colors duration-300 flex items-center justify-center group animate-pulse hover:cursor-pointer hover:animate-none"
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors duration-300 flex items-center justify-center group animate-pulse hover:cursor-pointer hover:animate-none"
         >
           <img src="/images/w.svg" alt="WhatsApp" className="w-18 h-18 hover:animate-pulse invert" />
         </motion.button>
@@ -55,13 +55,13 @@ export const WhatsAppBtn = () => {
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}
-              className="absolute bottom-22 md:bottom-26 -right-2 w-80 max-w-[calc(100vw-3rem)] bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden"
+              className="absolute bottom-22 md:bottom-26 -right-5 w-80 max-w-[calc(100vw-3rem)] bg-white/80 backdrop-blur-xl rounded-lg shadow-2xl border border-gray-200 overflow-hidden"
             >
               {/* Header */}
               <div className="bg-green-500 text-white p-2 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <MessageCircle size={24} />
-                  <h3 className="font-semibold text-sm">Agendar una cita | Envia un mensaje a Santi de prueba </h3>
+                  <h3 className="font-semibold text-xs">Agendar una cita <br/>Envia un mensaje a Santi de prueba </h3>
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}
