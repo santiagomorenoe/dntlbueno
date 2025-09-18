@@ -10,7 +10,7 @@ export const WhatsAppBtn = () => {
   const [message, setMessage] = useState("");
   const [sucursal, setSucursal] = useState("");
   
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (name.trim() && message.trim() && sucursal.trim()) {
       const whatsappMessage = `Hola! Soy ${name}. Mi cita será en: ${sucursal}. Motivo de la cita: ${message}`;
@@ -124,7 +124,7 @@ export const WhatsAppBtn = () => {
                 </div>
 
                 <motion.button
-                  onClick={handleSubmit as any}
+                  onClick={handleSubmit}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md font-medium flex items-center justify-center gap-2 transition-colors duration-200 hover:cursor-pointer"
