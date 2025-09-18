@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import FooterNewsletter from "@/components/Footer";
 import { Locations } from "@/components/Locations";
+import { WhatsAppBtn } from "@/components/ui/whatsapp-btn";
 
 export default function Home() {
   const t = useTranslations();
@@ -32,6 +33,7 @@ export default function Home() {
       <Locations />
       <Faq />
       <FooterNewsletter />
+      <WhatsAppBtn />
     </div>
   );
 }
