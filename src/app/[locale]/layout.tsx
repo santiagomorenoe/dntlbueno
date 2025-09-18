@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dental Bueno",
     description: "Dental Bueno, la mejor opción para tu salud dental, con la mejor tecnología y el mejor equipo de profesionales.",
-    images: '/images/dentalog.png',
+    images: '/images/mini_logo.png',
   },
   twitter: {
     card: 'summary_large_image',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     images: '/images/dentalog.png',
   },
   icons: {
-    icon: '/images/dentalog.png',
-    apple: '/images/dentalog.png',
+    icon: '/images/mini_logo.png',
+    apple: '/images/mini_logo.png',
   }
 };
 
