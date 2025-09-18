@@ -13,7 +13,7 @@ export default function Home() {
   const t = useTranslations();
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-dvh relative">
       {/* leyenda del desarrollador */}
       <div className="text-center text-xs bg-background/50 py-2 text-foreground backdrop-blur-3xl sticky top-32 md:top-24 z-50 w-fit px-12 mx-auto">
         <p className="italic">
