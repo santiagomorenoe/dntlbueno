@@ -8,6 +8,7 @@ import { TitleSection } from "./ui/title-section";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 
+
 export function Highlight({
   children,
   className,
