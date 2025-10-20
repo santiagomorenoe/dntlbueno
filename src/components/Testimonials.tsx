@@ -8,6 +8,7 @@ import { Marquee } from "@/components/ui/maquee";
 import { TitleSection } from "./ui/title-section";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 
 export function Highlight({
@@ -99,12 +100,13 @@ export function TestimonialCard({
 export default function Testimonials() {
   const t = useTranslations("testimonials.patients");
   const t2 = useTranslations("testimonials");
+  const router = useRouter();
   const testimonials = [
     {
       name: t("0.name"),
       role: t("0.role"),
       img: "https://randomuser.me/api/portraits/men/22.jpg",
-      description: (
+      description: (  
         <p>
           {t("0.description")}
           <Highlight>{t("0.highlight")}</Highlight>
@@ -270,6 +272,7 @@ export default function Testimonials() {
           <Button
             variant="default"
             className="hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+            onClick={() => router.push("/testimonials")}
           >
             {t2("btnText")}
             <ChevronRight />
