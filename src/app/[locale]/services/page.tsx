@@ -35,7 +35,7 @@ const iconMap: { [key: string]: LucideIcon } = {
 export default function ServicesPage() {
   const t = useTranslations("services");
 
-  // Get featured services
+  // Get featured services dadadadadada deployyyyy
   const featuredServices = [
     t("services_page.servicios.destacados.0"),
     t("services_page.servicios.destacados.1"),
