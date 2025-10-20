@@ -1,99 +1,45 @@
-{
-  "common": {
-    "theme": {
-      "light": "Claro",
-      "dark": "Oscuro",
-      "system": "Sistema",
-      "toggleTheme": "Cambiar tema"
-    },
-    "navigation": {
-      "home": "Inicio",
-      "services": "Servicios",
-      "about": "Nosotros",
-      "contact": "Contacto",
-      "testimonials": "Testimonios",
-      "faq": "Preguntas Frecuentes",
-      "scheduling": "Agendar cita",
-      "locations": "Sucursales"
-    },
-    "pages": {
-      "about": "Nosotros",
-      "services": "Servicios",
-      "testimonials": "Testimonios",
-      "branches": "Sucursales",
-      "faq": "Preguntas Frecuentes",
-      "locations": "Sucursales"
-    },
-    "actions": {
-      "save": "Guardar",
-      "cancel": "Cancelar",
-      "delete": "Eliminar",
-      "edit": "Editar",
-      "create": "Crear",
-      "search": "Buscar"
-    }
-  },
-  "home": {
-    "title": {
-      "first": "Dental Bueno",
-      "second": "Dental Bueno",
-      "third": "Contamos con una variedad de tratamientos que te ayudarán a lograr la sonrisa de tus sueños.",
-      "fourth": "Los mejores dentistas en CDMX y en el estado de México."
-    },
-    "cta": {
-      "primary": "Agenda tu cita",
-      "secondary": "Dental Bueno cerca de ti"
-    }
-  },
-  "about": {
-    "title": "Sonríe con **B de Bueno**",
-    "description": "**Dental Bueno** te invita a conocer una historia de pasión, excelencia y **más de 25 años de experiencia**. Fundada por la **reconocida Dra. Liliana Bueno**, odontóloga mexicana y líder de opinión en el grupo **Straumann**, referencia mundial en implantes dentales, biomateriales y prótesis.",
-    "description2": "Miembro del **WIN (Woman Implantology Network)**, la red internacional más influyente de mujeres en implantología, la Dra. Bueno ha consolidado a Dental Bueno como un **referente nacional en medicina dental**.",
-    "stats": {
-      "satisfiedPatients": "Pacientes Satisfechos",
-      "yearsOfExperience": "Años de Experiencia",
-      "branches": "Sucursales",
-      "awardsWon": "Premios Ganados"
-    }
-  },
-  "services": {
-    "title": "**Servicios** Especializados",
-    "btnText": "Ver todos los servicios",
-    "services": [
-      {
-        "title": "Diseño Dental",
-        "description": "Mejora la apariencia de tu sonrisa, alineando el color, la forma y el tamaño de tus dientes para una apariencia armoniosa."
+    {
+      "sucursales": [
+        {
+          "zona": "Polanco",
+          "ubicacion": "Avenida Ejército Nacional 373 CONSULTORIO 203, 2ndo piso, Granada, 11520 Ciudad de México, CDMX",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4076879945715!2d-99.18875482478553!3d19.43798178184263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f96aecd9786f%3A0xa17b90eeac3c6737!2sDental%20Bueno%20Polanco!5e0!3m2!1ses-419!2smx!4v1760677699286!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/d7khceLCJxiyNVb59"
+        },
+        {
+          "zona": "Coacalco",
+          "ubicacion": "Av. Dalias 184, Villa de las Flores, 55710 San Francisco Coacalco, Méx.",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.625659563466!2d-99.09844419999999!3d19.6432954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f3f44ad15cb7%3A0x17071cf95e54a57c!2sDental%20Bueno%20Coacalco!5e0!3m2!1ses-419!2smx!4v1760677682064!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/maMrYMbxPJaUCw229"
+        },
+        {
+          "zona": "Cuautitlán Izcalli",
+          "ubicacion": "Av. de los Océanos 32, Atlanta, 54740 Cuautitlán Izcalli, Méx.",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.527100331189!2d-99.21406329999999!3d19.647505300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21e472d5f538b%3A0x945fd5d224b6f8dc!2sDental%20Bueno%20Cuautitl%C3%A1n%20Izcalli!5e0!3m2!1ses-419!2smx!4v1760677644158!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/MRE2oXqXXyQwQvJB6"
+        },
+        {
+          "zona": "Insurgentes Sur",
+          "ubicacion": "Av. Insurgentes Sur 4074-Local C, Tlalpan Centro I, Tlalpan, 14000 Ciudad de México, CDMX",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.928060684647!2d-99.1753482!3d19.2854944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce018cb88ffabd%3A0x768ea98bf87e3698!2sDental%20Bueno%20Insurgentes%20Sur!5e0!3m2!1ses-419!2smx!4v1760677609584!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/pcZ7SGSPoYsTH2is8"
+        },
+        {
+          "zona": "Bosque de las Lomas",
+          "ubicacion": "Bosque de los Ciruelos 194, Bosque de las Lomas, Miguel Hidalgo, 11700 Ciudad de México, CDMX",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.159173488939!2d-99.23937099999999!3d19.4055274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2014b3031cda7%3A0xb96ca5529a54444c!2sDental%20Bueno%20Bosque%20de%20las%20Lomas!5e0!3m2!1ses-419!2smx!4v1760677567014!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/xUyPgbmHdD5agAGm8"
+        },
+        {
+          "zona": "Valle Dorado",
+          "ubicacion": "Bulevar de Los Continentes 62, Valle Dorado, 54020 Tlalnepantla, Méx.",
+          "mapa_embebido": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15039.091204895733!2d-99.21223169999999!3d19.551365399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202d4984a29b7%3A0xc2f23d9b38c69554!2sDental%20Bueno%20Valle%20Dorado!5e0!3m2!1ses-419!2smx!4v1760677466495!5m2!1ses-419!2smx",
+          "ubicacion_mapa": "https://maps.app.goo.gl/ArxjSvJRm512bPdc7"
+        }
+      ],
+      "acercaDe": {
+        "description": "Dental Bueno te invita a descubrir una historia llena de pasión y dedicación que se extiende por más de 25 años. Todo comenzó con la visionaria Dra. mexicana Liliana Bueno, quien se ha convertido en una figura inspiradora y líder de opinión en el grupo Straumann, un prestigioso fabricante de implantes dentales, instrumentos, biomateriales y prótesis. Con orgullo, también forma parte del WIN (Woman Implantology Network), la red internacional más influyente de odontólogas en la industria. En Dental Bueno, no solo nos destacamos a nivel nacional en la colocación de implantes dentales, ortodoncia, diseño de sonrisas y turismo médico, sino que también transformamos vidas y dibujamossonrisas que iluminan el mundo."
       },
-      {
-        "title": "Implantes Dentales",
-        "description": "Recupera tu sonrisa con implantes dentales duraderos. Soluciones de alta calidad para restaurar la funcionalidad y estética."
-      },
-      {
-        "title": "Ortodoncia Dental",
-        "description": "Alinea tus dientes y mejora tu salud oral con ortodoncia moderna. Consigue una sonrisa perfecta con resultados excepcionales."
-      },
-      {
-        "title": "Turismo Médico",
-        "description": "Combina tu tratamiento dental con unas vacaciones. Disfruta de una atención exclusiva en un entorno relajante y memorable."
-      },
-      {
-        "title": "Radiología",
-        "description": "Diagnósticos precisos con tecnología avanzada. Obtenemos imágenes de alta calidad para un tratamiento dental completo."
-      },
-      {
-        "title": "Cirugía Dental",
-        "description": "Procedimientos especializados para resolver problemas complejos. Nuestros expertos garantizan un cuidado oral seguro y completo."
-      },
-      {
-        "title": "Odontopediatría",
-        "description": "Cuidado de la salud oral para niños. Fomentamos hábitos saludables y una experiencia positiva, segura y divertida para los más pequeños."
-      },
-      {
-        "title": "Periodoncia",
-        "description": "Tratamiento especializado para encías saludables. Prevenimos enfermedades y ofrecemos soluciones duraderas para tu salud oral."
-      }
-    ],
-    "services_page": {
       "servicios": {
         "destacados": [
           "Implantes Dentales",
@@ -345,181 +291,3 @@
         }
       }
     }
-  },
-  "testimonials": {
-    "title": "Nuestros **pacientes**",
-    "btnText": "Ver todos los testimonios",
-    "patients": [
-      {
-        "name": "Eric González",
-        "role": "Paciente de la sucursal Polanco",
-        "description": "La experiencia fue impecable, desde la primera consulta hasta el seguimiento final.",
-        "highlight": "experiencia fue impecable, desde la primera consulta hasta el seguimiento final."
-      },
-      {
-        "name": "Maya Rodriguez",
-        "role": "Paciente de la sucursal Cuautitlan Izcalli",
-        "description": "Me impresionó la tecnología y la dedicación del equipo.",
-        "highlight": "tecnología y dedicación del equipo."
-      },
-      {
-        "name": "Rafael Pérez",
-        "role": "Paciente de la sucursal Bosques",
-        "description": "Nunca recibí una atención tan detallada y humana.",
-        "highlight": "atención tan detallada y humana."
-      },
-      {
-        "name": "Ana López",
-        "role": "Paciente de la sucursal Coacalco",
-        "description": "Me encantó la rapidez y organización de todo el servicio.",
-        "highlight": "rapidez y organización de todo el servicio."
-      },
-      {
-        "name": "Juan Pérez",
-        "role": "Paciente de la sucursal Valle Dorado",
-        "description": "Sentí que realmente se adaptaron a mis necesidades.",
-        "highlight": "adaptaron a mis necesidades."
-      },
-      {
-        "name": "María Gómez",
-        "role": "Paciente de la sucursal Pirules",
-        "description": "No encontré tal dedicación hoy en día.",
-        "highlight": "dedicación hoy en día."
-      },
-      {
-        "name": "Carlos Rodríguez",
-        "role": "Paciente de la sucursal Coacalco",
-        "description": "Me encantó la combinación de profesionalismo y calidez.",
-        "highlight": "combinación de profesionalismo y calidez."
-      },
-      {
-        "name": "Laura Hernández",
-        "role": "Paciente de la sucursal Polanco",
-        "description": "Me encantó la atención al detalle.",
-        "highlight": "atención al detalle."
-      },
-      {
-        "name": "Pedro García",
-        "role": "Paciente de la sucursal Cuautitlan Izcalli",
-        "description": "Estoy impresionado por la innovación que aplican en su trabajo.",
-        "highlight": "innovación que aplican en su trabajo."
-      },
-      {
-        "name": "Sofía López",
-        "role": "Paciente de la sucursal Bosques",
-        "description": "Ofrecen soluciones modernas con un toque humano.",
-        "highlight": "soluciones modernas con un toque humano."
-      }
-    ]
-  },
-  "locations": {
-    "title": "Nuestras **sucursales**",
-    "btnText": "Llamarnos",
-    "btnText2": "Encuentra la más cercana",
-    "address": "Dirección",
-    "schedule": "Horario",
-    "searching": "Buscando...",
-    "nearest": "Más cercana",
-    "directions": "Cómo llegar",
-    "sortedByDistance": "Las sucursales están ordenadas por distancia a tu ubicación",
-    "locationError": "No se pudo obtener tu ubicación. Por favor, verifica los permisos.",
-    "locationNotSupported": "Tu navegador no soporta geolocalización.",
-    "branches": [
-      {
-        "title": "Polanco",
-        "address": "Av. Polanco 123, Polanco, México",
-        "schedule": "Lunes a Viernes: 9:00 - 18:00"
-      },
-      {
-        "title": "Coacalco",
-        "address": "Av. de los Ejidos 123, Coacalco, México",
-        "schedule": "Lunes a Viernes: 9:00 - 18:00"
-      },
-      {
-        "title": "Cuautitlan Izcalli",
-        "address": "Av. Cuautitlan Izcalli 123, Cuautitlan Izcalli, México",
-        "schedule": "Lunes a Viernes: 9:00 - 18:00"
-      },
-      {
-        "title": "Pirules",
-        "address": "Av. Pirules 123, Pirules, México",
-        "schedule": "Lunes a Viernes: 9:00 - 18:00"
-      },
-      {
-        "title": "Valle Dorado",
-        "address": "Av. Valle Dorado 123, Valle Dorado, México",
-        "schedule": "Lunes a Viernes: 9:00 - 18:00"
-      },
-      {
-        "title": "Bosques",
-        "address": "Próximamente...",
-        "schedule": "Próximamente..."
-      }
-    ]
-  },
-  "faq": {
-    "title": "Preguntas **Frecuentes**",
-    "contactText": "¿Aún tienes preguntas?",
-    "btnText": "Agenda tu cita",
-    "contactText2": "Estamos aquí para ayudarte",
-    "questions": [
-      {
-        "question": "¿Qué hace único a Dental Bueno?",
-        "answer": "Dental Bueno es una clínica dental que ofrece servicios de calidad a un precio accesible. Contamos con un equipo de profesionales altamente capacitados y la última tecnología en procedimientos dentales, para que puedas tener un tratamiento dental completo y personalizado."
-      },
-      {
-        "question": "¿Qué servicios ofrece Dental Bueno?",
-        "answer": "Ofrecemos una amplia gama de especialidades y contamos con la última tecnología en procedimientos dentales, para que puedas tener un tratamiento dental completo y personalizado."
-      },
-      {
-        "question": "¿Cómo puedo agendar una cita?",
-        "answer": "Puedes agendar una cita a través de nuestro sitio web o llamando a nuestro centro de servicio al cliente."
-      },
-      {
-        "question": "¿Qué horario de atención tiene Dental Bueno?",
-        "answer": "Nuestro horario de atención es de Lunes a Viernes de 8:00 a 18:00 horas."
-      },
-      {
-        "question": "¿Qué métodos de pago aceptan?",
-        "answer": "Aceptamos efectivo, tarjetas de crédito y débito."
-      }
-    ]
-  },
-  "footer": {
-    "title": "Nuestras **Redes Sociales**",
-    "description": "Dental Bueno te invita a descubrir una historia llena de pasión y dedicación que se extiende por más de 25 años",
-    "btnText": "Síguenos",
-    "copyright": "© 2025 Dental Bueno. Todos los derechos reservados.",
-    "columns": [
-      {
-        "title": "Sucursales",
-        "links": [
-          "Cuautitlán Izcalli",
-          "Polanco",
-          "Coacalco",
-          "Insurgentes Sur",
-          "Pirules",
-          "Valle Dorado",
-          "Bosque de las Lomas"
-        ]
-      },
-      {
-        "title": "Sitio web",
-        "links": [
-          "Inicio",
-          "Nosotros",
-          "Servicios",
-          "Testimonios",
-          "Preguntas Frecuentes",
-          "Sucursales"
-        ]
-      }
-    ],
-    "legalLinks": [
-      "Sitio web desarrollado por Santi Moreno @Syntora",
-      "",
-      "",
-      ""
-    ]
-  }
-}

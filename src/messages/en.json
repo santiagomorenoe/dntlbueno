@@ -13,7 +13,16 @@
       "contact": "Contact",
       "testimonials": "Testimonials",
       "faq": "FAQ",
-      "scheduling": "Get in touch"
+      "scheduling": "Get in touch",
+      "locations": "Locations"
+    },
+    "pages": {
+      "about": "About Us",
+      "services": "Services",
+      "branches": "Branches",
+      "testimonials": "Testimonials",
+      "faq": "Frequently Asked Questions",
+      "locations": "Locations"
     },
     "actions": {
       "save": "Save",
@@ -28,7 +37,8 @@
     "title": {
       "first": "Dental Bueno",
       "second": "Dental Bueno",
-      "third": "Ready to smile without limits?"
+      "third": "We offer a wide range of specialties and we have the latest technology in dental procedures, so you can have a complete and personalized dental treatment.",
+      "fourth": "The best dentists in CDMX and in the state of Mexico."
     },
     "cta": {
       "primary": "Schedule your appointment",
@@ -37,7 +47,8 @@
   },
   "about": {
     "title": "Smile with **B of Bueno**",
-    "description": "We offer a wide range of specialties and we have the latest technology in dental procedures, so you can have a complete and personalized dental treatment.",
+    "description": "**Dental Bueno** invites you to discover a story of passion, excellence and **more than 25 years of experience**. Founded by the **recognized Dr. Liliana Bueno**, Mexican dental surgeon and opinion leader in the **Straumann** group, a world reference in dental implants, biomaterials and prostheses.",
+    "description2": "Member of the **WIN (Woman Implantology Network)**, the most influential international network of women in implantology, Dr. Bueno has consolidated Dental Bueno as a **national reference in dental medicine**.",
     "stats": {
       "satisfiedPatients": "Satisfied Patients",
       "yearsOfExperience": "Years of Experience",
@@ -46,7 +57,7 @@
     }
   },
   "services": {
-    "title": "Specialized **Services**",
+    "title": "Services",
     "btnText": "See all services",
     "services": [
       {
@@ -81,7 +92,259 @@
         "title": "Periodontics",
         "description": "Specialized treatment for healthy gums. We prevent diseases and offer durable solutions for your oral health."
       }
-    ]
+    ],
+    "services_page": {
+      "servicios": {
+        "destacados": [
+          "Dental Implants",
+          "Dental Orthodontics",
+          "Dental Design",
+          "Medical Tourism"
+        ],
+        "general_services": {
+          "title": "General Services",
+          "services": [
+            {
+              "title": "General Consultation",
+              "description": "Complete dental evaluation that includes early detection of caries and periodontal diseases, radiographs and dental cleaning."
+            },
+            {
+              "title": "Laser Whitening",
+              "description": "Tratamiento rápido y efectivo que activa un gel especial con láser para devolver la blancura natural a tus dientes y mejorar tu sonrisa."
+            },
+            {
+              "title": "Digital Smile Design",
+              "description": "Tecnología digital que te permite visualizar el resultado final de tu sonrisa personalizada antes de comenzar el tratamiento."
+            },
+            {
+              "title": "Histopathological Studies",
+              "description": "Laboratory analysis to diagnose oral diseases and determine the most appropriate treatment for your case."
+            },
+            {
+              "title": "Dental Implants",
+              "description": "Permanent and durable solution to replace lost teeth, improving function and aesthetics. Consult with our experts."
+            },
+            {
+              "title": "Dental Prophylaxis",
+              "description": "Professional cleaning that removes plaque and tartar, preventing caries and periodontal diseases."
+            },
+            {
+              "title": "Dental Fillings",
+              "description": "Aesthetic restoration that repairs caries, cracks, chips and fractures, restoring the natural shape and color of the tooth."
+            },
+            {
+              "title": "Dental Sealants",
+              "description": "Preventive technique that seals the grooves and cracks in the teeth to prevent the accumulation of plaque and bacteria."
+            }
+          ]
+        },
+        "specialized_services": {
+          "endodoncia": {
+            "title": "Endodontics",
+            "description": "Specialized treatment to save damaged or infected teeth. Keep your teeth and maintain a healthy smile.",
+            "services": [
+              {
+                "title": "Pulp Capping",
+                "description": "Procedure that protects the dental pulp and prevents its inflammation."
+              },
+              {
+                "title": "Re-treatment",
+                "description": "When a previous endodontics has failed, we re-treat the tooth safely and effectively."
+              },
+              {
+                "title": "Apicectomy",
+                "description": "Minor surgery to remove the infected root tip, performed by an endodontics specialist."
+              },
+              {
+                "title": "Root Canal Treatments",
+                "description": "Solution to save a severely damaged tooth, removing the affected pulp and sealing the root canal."
+              }
+            ]
+          },
+          "ortodoncia": {
+            "title": "Orthodontics",
+            "description": "Specialty that diagnoses and treats dental and maxillofacial anomalies, improving both function and aesthetics.",
+            "sintomas": "Frequent headaches may be related to dental problems. Correcting them not only improves appearance but also alleviates associated symptoms.",
+            "services": [
+              {
+                "title": "Rapid Palatal Expander",
+                "description": "Device that widens the palate to correct crossbite and dental crowding."
+              },
+              {
+                "title": "Facial Mask",
+                "description": "Device that corrects Class III malocclusion, promoting correct bone development. Ideal for children aged 6 to 8 years to avoid future surgery."
+              },
+              {
+                "title": "Placa Hawley",
+                "description": "Adjustable retainer that maintains the position of the teeth after orthodontic treatment."
+              },
+              {
+                "title": "Finger or Tongue Trap",
+                "description": "Device that helps correct harmful oral habits like thumb sucking."
+              },
+              {
+                "title": "Invisible Orthodontics",
+                "description": "Transparent and removable aligners that correct the dental position discreetly and comfortably."
+              }
+            ]
+          },
+          "cirugia": {
+            "title": "Surgery",
+            "description": "Specialty that diagnoses and treats dental and oral diseases through safe and effective surgical procedures.",
+            "services": [
+              {
+                "title": "Retained Canine Surgery",
+                "description": "Procedure to extract canines that have not erupted correctly, improving the bite and dental aesthetics."
+              },
+              {
+                "title": "Biopsy",
+                "description": "Extraction of oral tissue sample for diagnosis and prevention of diseases. Quick procedure in the office."
+              },
+              {
+                "title": "Third Molar Surgery",
+                "description": "Extraction of impacted wisdom teeth that cause pain or infection. Requires anesthesia and recovery period."
+              },
+              {
+                "title": "Extractions",
+                "description": "Simple and surgical extractions for damaged, diseased or impacted teeth."
+              },
+              {
+                "title": "Dental Implants",
+                "description": "Durable solution to replace lost teeth. Placement of titanium attachment that integrates with the bone."
+              },
+              {
+                "title": "Mini Implants",
+                "description": "Less invasive option that stabilizes post-operative dentures, ideal for special cases."
+              },
+              {
+                "title": "Bone Graft",
+                "description": "Procedure to strengthen the bone and allow the placement of implants in patients with bone loss."
+              },
+              {
+                "title": "Incision and Drainage of Abscess",
+                "description": "Treatment of severe dental infections through drainage of pus and cleaning of the affected area."
+              },
+              {
+                "title": "Sinus Elevation",
+                "description": "Procedure to increase bone in the upper jaw, allowing the placement of implants."
+              }
+            ]
+          },
+          "radiologia": {
+            "title": "Radiology",
+            "description": "Diagnostic by X-ray for precise evaluation of teeth, bones and oral structures.",
+            "services": [
+              {
+                "title": "Intraoral Radiography",
+                "description": "Detailed radiographs captured inside the mouth with digital sensor."
+              },
+              {
+                "title": "Panoramic Radiography",
+                "description": "Complete image of the mouth, teeth, maxillaries and surrounding bone structures."
+              },
+              {
+                "title": "Cephalometric Radiography",
+                "description": "Lateral radiography of the head and neck, used in orthodontics to evaluate bone and dental relationships."
+              }
+            ]
+          },
+          "protesis": {
+            "title": "Prosthesis",
+            "description": "Solutions in titanium, zirconia and other materials to restore damaged or lost teeth.",
+            "services": [
+              {
+                "title": "Inlays",
+                "description": "Restoration of ceramic or composite that repairs teeth with caries, protecting their shape and function."
+              },
+              {
+                "title": "Veneers",
+                "description": "Esthetic coating of porcelain or composite that covers imperfections, stains and dental discolorations."
+              },
+              {
+                "title": "Crowns",
+                "description": "Protective covering in metal, porcelain or ceramic that restores damaged or weakened teeth."
+              },
+              {
+                "title": "Glass Fiber Endopost",
+                "description": "Restorative material that reconstructs the lost dental structure after endodontics. Consult with our experts."
+              },
+              {
+                "title": "Total Denture",
+                "description": "Removable prosthesis of acrylic that replaces all teeth, restoring function and aesthetics."
+              },
+              {
+                "title": "Partial Removable Prosthesis",
+                "description": "Removable device that replaces missing teeth, improving function and dental aesthetics."
+              }
+            ]
+          },
+          "periodoncia": {
+            "title": "Periodontology",
+            "description": "Specialty that diagnoses and treats periodontal diseases and tissues.",
+            "services": [
+              {
+                "title": "Deep Dental Cleaning",
+                "description": "Scraping and root leveling to remove plaque and tartar under the gum line and dental roots."
+              },
+              {
+                "title": "Periodontal Surgery",
+                "description": "Surgical procedure for advanced cases: removes damaged tissue and regenerates lost bone."
+              },
+              {
+                "title": "Periodontal Maintenance",
+                "description": "Regular post-treatment program that controls the disease and prevents its recurrence."
+              }
+            ]
+          },
+          "odontopediatria": {
+            "title": "Pediatric Dentistry",
+            "description": "Specialty dedicated to the diagnosis and treatment of dental diseases in children, focused on prevention and oral health.",
+            "services": [
+              {
+                "title": "Crowns",
+                "description": "Protective covering to restore damaged or weakened teeth, improving appearance and function."
+              },
+              {
+                "title": "Extraction of Temporary Tooth",
+                "description": "Procedure to extract milk teeth with advanced caries or other problems that require intervention."
+              },
+              {
+                "title": "Profilaxis in Children",
+                "description": "Professional cleaning that prevents caries and establishes good oral hygiene habits from an early age."
+              },
+              {
+                "title": "Pulpectomy in Temporary Tooth",
+                "description": "Treatment of infections in the dental pulp of milk teeth, protecting the permanent teeth."
+              },
+              {
+                "title": "Pulpotomy",
+                "description": "Procedure to treat pulp infections without extracting all the tissue, preserving the temporary tooth."
+              },
+              {
+                "title": "Resin in Temporary Tooth",
+                "description": "Esthetic restoration with adhesive material that repairs damaged temporary teeth."
+              },
+              {
+                "title": "Sellant of Foramina and Fissures",
+                "description": "Application of sellant material in molars to prevent caries in difficult cleaning areas."
+              },
+              {
+                "title": "Trainer",
+                "description": "Orthopedic device that corrects bite problems during mixed dentition."
+              },
+              {
+                "title": "Space Maintainer",
+                "description": "Device that preserves space between teeth after premature loss, ensuring correct alignment."
+              },
+              {
+                "title": "Palatal Expander Hyrax",
+                "description": "Orthopedic device that widens the upper palate, improving bite and breathing."
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   "testimonials": {
     "title": "Our **patients**",
@@ -155,6 +418,12 @@
     "btnText2": "Find the nearest",
     "address": "Address",
     "schedule": "Schedule",
+    "searching": "Searching...",
+    "nearest": "Nearest",
+    "directions": "Get directions",
+    "sortedByDistance": "Branches are sorted by distance to your location",
+    "locationError": "Could not get your location. Please check permissions.",
+    "locationNotSupported": "Your browser does not support geolocation.",
     "branches": [
       {
         "title": "Polanco",
@@ -223,33 +492,25 @@
     "copyright": "© 2025 Dental Bueno. All rights reserved.",
     "columns": [
       {
-        "title": "Solutions",
+        "title": "Branches",
         "links": [
-          "Business Automation",
-          "Cloud Services",
-          "Analytics",
-          "Integrations",
-          "Support"
+          "Polanco",
+          "Coacalco",
+          "Cuautitlan Izcalli",
+          "Insurgentes Sur",
+          "Bosques de las Lomas",
+          "Valle Dorado"
         ]
       },
       {
         "title": "Resources",
         "links": [
-          "Documentation",
-          "Case Studies",
-          "Blog",
-          "Webinars",
-          "Community"
-        ]
-      },
-      {
-        "title": "Company",
-        "links": [
+          "Home",
           "About Us",
-          "Careers",
-          "Contact",
-          "Partners",
-          "Press"
+          "Services",
+          "Testimonials",
+          "Frequently Asked Questions",
+          "Locations"
         ]
       }
     ],

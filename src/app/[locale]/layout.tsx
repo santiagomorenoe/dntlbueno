@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { routing } from "@/i18n/routing";
 import { Josefin_Sans, Inter } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
+import FooterNewsletter from "@/components/Footer";
+import { WhatsAppBtn } from "@/components/ui/whatsapp-btn";
 import "./globals.css";
 
 const josefinSans = Josefin_Sans({
@@ -74,7 +77,12 @@ export default async function LocaleLayout({
             disableTransitionOnChange
             storageKey="theme"
           >
-            {children}
+            <Navbar />
+            <main className="min-h-dvh">
+              {children}
+            </main>
+            <FooterNewsletter />
+            <WhatsAppBtn />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

@@ -71,73 +71,92 @@ const highlightVariants: Variants = {
   },
 };
 
-export const TitleSection = ({
-    title,
-    className = "text-foreground",
-  }: {
-    title: string;
-    className?: string;
-  }) => (
+interface TitleSectionProps {
+  title: string; 
+  variant: "default" | "white"
+  className?: string;
+}
+
+export const TitleSection: React.FC<TitleSectionProps> = ({ title, variant = "default", className }) => {
+  const textColor = variant === "white" ? "text-white" : "text-primary";
+  const highlightColor = variant === "white" ? "text-white" : "text-secondary";
+  return (
     <motion.div
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false }}
-      transition={{ duration: 0.5 }}
-      className={`font-normal flex flex-col items-center justify-center w-full px-6 ${className}`}
+      className={`text-left md:text-center flex flex-col items-center justify-center font-josefin-sans relative w-full max-w-4xl mx-auto px-4 md:px-8 ${className}`}
     >
-      {/* Título con texto destacado */}
-      <motion.h2
-        variants={textVariants}
-        className={`text-[24px] md:text-[30px] lg:text-[34px] font-semibold font-inter first-letter:capitalize text-center`}
+      {/* Título con dos colores */}
+      <motion.div
+        variants={itemVariants}
+        className={`text-[28px] sm:text-[32px] md:text-[36px] first-letter:capitalize ${textColor} w-full break-words`}
+        whileHover={{ scale: 1.04 }}
       >
-        {title.split("\n").map((paragraph, index) => {
+        {title.split("\n").map((paragraph: string, index: number) => {
           const parts = paragraph.split(/(\*\*.*?\*\*|__.*?__)/g);
           return (
-            <motion.span
-              key={index}
-              variants={textVariants}
-              className={`leading-relaxed pt-4`}
-            >
-              {parts.map((part, i) => {
+            <motion.div key={index} variants={textVariants} className="w-full">
+              {parts.map((part: string, i: number) => {
                 if (part.startsWith("**") && part.endsWith("**")) {
                   return (
-                    <div key={i} className="flex items-center w-full">
-                      <motion.span
-                        variants={highlightVariants}
-                        whileHover="hover"
-                        className={`inline-block pl-4 font-normal text-[40px] md:text-[46px] lg:text-[49px] font-josefin-sans uppercase cursor-text text-primary ${className}`}
-                      >
-                        {part.slice(2, -2)}
-                      </motion.span>
-                    </div>
+                    <motion.span
+                      key={i}
+                      variants={highlightVariants}
+                      className={`block text-[36px] md:text-[48px] uppercase ${highlightColor} font-extralight font-inter`}
+                    >
+                      {part.slice(2, -2)}
+                    </motion.span>
                   );
                 }
-                if (i === 0 && part.trim() != "") {
-                  return (
-                    <span key={i} className="inline-flex items-center">
-                      <motion.span
-                        variants={textVariants}
-                        className="inline-block"
-                      >
-                        {part}
-                      </motion.span>
-                    </span>
-                  );
-                }
-                return (
-                  <motion.span
-                    key={i}
-                    variants={textVariants}
-                    className="inline-block"
-                  >
-                    {part}
-                  </motion.span>
-                );
+                return part;
               })}
-            </motion.span>
+            </motion.div>
           );
         })}
-      </motion.h2>
+      </motion.div>
     </motion.div>
   );
+};
+
+export const DescriptionSection = ({ description, className }: { description: string, className?: string }) => {
+  return (
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      className={`text-left flex flex-col items-center justify-center text-white/80 font-inter relative w-full max-w-4xl mx-auto px-4 md:px-8 ${className}`}
+    >
+      {/* Título con dos colores */}
+      <motion.div
+        variants={itemVariants}
+        className={`w-full break-words`}
+        whileHover={{ scale: 1.04 }}
+      >
+        {description.split("\n").map((paragraph: string, index: number) => {
+          const parts = paragraph.split(/(\*\*.*?\*\*|__.*?__)/g);
+          return (
+            <motion.div key={index} variants={textVariants} className="w-full">
+              {parts.map((part: string, i: number) => {
+                if (part.startsWith("**") && part.endsWith("**")) {
+                  return (
+                    <motion.span
+                      key={i}
+                      variants={highlightVariants}
+                      className={`text-base md:text-lg lg:text-xl leading-relaxed text-white font-josefin-sans`}
+                    >
+                      {part.slice(2, -2)}
+                    </motion.span>
+                  );
+                }
+                return part;
+              })}
+            </motion.div>
+          );
+        })}
+      </motion.div>
+    </motion.div>
+  );
+};

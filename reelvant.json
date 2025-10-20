@@ -1,0 +1,104 @@
+{
+    "brand_name": "Dental Bueno",
+    "main_heading": "Los Mejores Dentistas en CDMX: Tu Sonrisa, Nuestra Pasión",
+    "introduction": {
+      "title": "El Camino Personalizado Hacia la Sonrisa de Tus Sueños",
+      "paragraph": "En Dental Bueno, contamos con una amplia variedad de tratamientos de vanguardia diseñados para ayudarte a lograr la sonrisa que siempre has deseado. Comprendemos que cada paciente es único, por lo que el plan de tratamiento se adapta a diversos factores cruciales como el tiempo disponible, el estado actual de tus dientes y, fundamentalmente, tus expectativas personales. Nuestra prioridad es encontrar la mejor alternativa para ti, garantizando resultados óptimos y una experiencia inigualable.",
+      "key_focus_areas": [
+        "Tratamientos personalizados y adaptados a tus necesidades.",
+        "Consideración de tiempo y expectativas del paciente.",
+        "Búsqueda de la mejor alternativa para cada caso."
+      ]
+    },
+    "sections": [
+      {
+        "id": "our_commitment_to_quality",
+        "title": "Calidad y Confianza: La Promesa de Dental Bueno",
+        "summary": "Ofrecemos un servicio de calidad insuperable con el respaldo de especialistas certificados en cada área dental, eliminando la necesidad de buscar en múltiples clínicas. Nuestra atención se extiende a pacientes nacionales e internacionales, con un equipo preparado para recibirte y atenderte en cualquiera de nuestras modernas sucursales en CDMX.",
+        "details": {
+          "service_excellence": "Garantía de servicio de calidad superior.",
+          "certified_specialists": "Equipo de especialistas altamente cualificados y certificados en cada disciplina dental.",
+          "one_stop_clinic": "Solución integral para todas tus necesidades dentales, sin necesidad de recurrir a otros centros.",
+          "international_patient_support": "Personal capacitado para atender y guiar a pacientes provenientes del extranjero."
+        }
+      },
+      {
+        "id": "passion_and_innovation",
+        "title": "Pasión por tu Sonrisa: B de Bueno, B de Bienestar",
+        "slogans": [
+          "Con Dental Bueno, siempre hay un plan B.",
+          "¡Queremos devolverte la sonrisa con B de Bueno!"
+        ],
+        "description": "En Dental Bueno, nuestra mayor pasión es asegurar que tu experiencia dental sea verdaderamente excepcional y de la más alta calidad. Nos enorgullece ofrecerte una increíble diversidad de especialidades odontológicas y el acceso a la tecnología más avanzada en cada procedimiento. Nuestro objetivo es que disfrutes de un tratamiento completo y perfectamente adaptado a tus necesidades específicas, garantizando tu confort y los mejores resultados.",
+        "highlights": [
+          {
+            "type": "experience_and_expertise",
+            "years": 25,
+            "description": "Más de 25 años de experiencia certificada, respaldados por los mejores especialistas comprometidos con la más alta atención y calidad en cada tratamiento."
+          },
+          {
+            "type": "national_leadership",
+            "area": "Implantes Dentales",
+            "statement": "Líderes a nivel nacional en la colocación de implantes dentales, habiendo transformado miles de vidas y sonrisas con éxito."
+          },
+          {
+            "type": "pioneering_spirit",
+            "years": 25,
+            "statement": "25 años siendo pioneros en tecnología e innovación dental, constantemente actualizando nuestros métodos y equipos."
+          }
+        ],
+        "technology_and_specialties": {
+          "advanced_technology": "Uso de la tecnología más avanzada en todos los procedimientos dentales.",
+          "diverse_specialties": "Variedad increíble de especialidades para una atención dental completa."
+        }
+      },
+      {
+        "id": "our_expert_team",
+        "title": "El Equipo de Profesionales de Dental Bueno: Excelencia en Cada Sonrisa",
+        "description": "En Dental Bueno, nuestro compromiso es con la excelencia. Contamos con un equipo de profesionales excepcionales, altamente capacitados y con un profundo sentido de dedicación. Su principal objetivo es proporcionar atención de la más alta calidad, priorizando el cuidado personalizado y el bienestar integral de cada paciente en todos nuestros tratamientos.",
+        "team_attributes": [
+          "Equipo de profesionales excepcionales y dedicados.",
+          "Atención personalizada y de máxima calidad.",
+          "Compromiso con el bienestar integral del paciente."
+        ]
+      },
+      {
+        "id": "facilities_and_communication",
+        "title": "Instalaciones Modernas y Comunicación Multilingüe",
+        "facilities_description": "Nuestras clínicas están diseñadas pensando en tu máxima comodidad y eficiencia, con un enfoque especial en las necesidades de nuestros pacientes internacionales. Disponemos de un ambiente acogedor y moderno, equipado para proporcionar una experiencia dental superior.",
+        "communication_advantages": {
+          "bilingual_staff": true,
+          "language_support": "Contamos con personal bilingüe en todas nuestras clínicas, lo que garantiza una comunicación fluida y efectiva, eliminando cualquier barrera lingüística para una experiencia sin preocupaciones."
+        }
+      },
+      {
+        "id": "efficiency_and_medical_tourism",
+        "title": "Eficiencia y Conveniencia: Tu Turismo Dental en CDMX",
+        "time_saving_services": {
+          "express_service": "Ofrecemos un 'Servicio Exprés' diseñado para pacientes con tiempo limitado, ideal para quienes nos visitan desde el extranjero o de otras regiones de México, garantizando atención dental rápida y eficiente.",
+          "advanced_lab_and_fast_delivery": "Gracias a nuestro laboratorio de vanguardia interno, podemos entregar coronas de alta calidad en menos de 48 horas, una ventaja significativa para tu plan de viaje."
+        },
+        "medical_tourism_advantages": {
+          "strategic_location": "Nuestra ubicación geográfica privilegiada en la vibrante Ciudad de México nos convierte en la opción ideal para combinar un emocionante viaje de turismo con tu tratamiento dental.",
+          "accessibility_for_travelers": [
+            "Conexiones directas y eficientes desde el Aeropuerto Internacional de la Ciudad de México (AICM).",
+            "Vuelos internacionales recientes desde Houston y otras ciudades facilitan aún más tu llegada y acceso a nuestras clínicas."
+          ],
+          "safety_and_assurance": "La Ciudad de México es reconocida por ser un destino seguro y confiable para visitantes internacionales. En Dental Bueno, tu seguridad y bienestar son nuestra máxima prioridad, y te garantizamos atención de calidad en un entorno completamente seguro y acogedor.",
+          "unique_experience": "No solo te ofrecemos atención dental de primera, sino también la oportunidad de disfrutar de unas vacaciones inolvidables en una de las ciudades más bellas y emocionantes de México. ¡Transforma tu sonrisa y tu vida con una experiencia que recordarás siempre!"
+        },
+        "call_to_action": "¡Contáctanos hoy mismo para descubrir cómo el turismo médico en Dental Bueno puede transformar tu sonrisa y brindarte una experiencia inolvidable!"
+      }
+    ],
+    "recovery": [
+      {
+        "id": "patient_recovery_1",
+        "quote": "Una paciente más que recupera su sonrisa con nuestros profesionales. Orgullosos de Dental Bueno.",
+        "source": "Equipo Dental Bueno"
+      }
+    ],
+    "closing_statement": {
+      "title": "Compromiso Personalizado con Cada Paciente",
+      "paragraph": "Nuestro equipo de profesionales altamente capacitados y profundamente comprometidos se dedica a brindar un cuidado dental que es verdaderamente personalizado y de la más alta calidad. Trabajamos de cerca con cada paciente, escuchando atentamente sus necesidades individuales y diseñando planes de tratamiento que se adaptan perfectamente a sus objetivos específicos, asegurando que cada paso te acerque a la sonrisa deseada."
+    }
+  }

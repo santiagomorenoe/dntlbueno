@@ -4,8 +4,9 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import { ArrowDown, Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { HeroVideoDialog } from "./ui/video-dialog";
+import { useIsMobile } from "@/app/hooks/use-is-mobile";
 import { useTranslations } from "next-intl";
+import { WhatsAppIcon } from "./Footer";
 
 const titleVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
@@ -26,16 +27,24 @@ const handleScrollDown = () => {
   }
 };
 
+const handleScrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 export default function Hero() {
   const t = useTranslations("home.title");
   const t2 = useTranslations("home.cta");
+  const isMobile = useIsMobile();
   return (
-    <div className="bg-background h-dvh relative w-full overflow-hidden" id="home">
-      <div className="absolute inset-0 z-0 overflow-hidden mx-5 mt-0 mb-5 rounded-[30px] border-2 border-primary/20">
-        <div className="absolute inset-0 bg-black/45 backdrop-blur-xs z-10" />
+    <div className="bg-background h-[calc(100vh-100px)] relative w-full overflow-hidden" id="home">
+      <div className="absolute inset-0 z-0 overflow-hidde rounded-[30px]">
+        <div className="absolute inset-0 bg-black/45 z-10" />
         <motion.img
           className="w-full h-full object-cover"
-          src="https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?_gl=1*t013mu*_ga*NDUzMjE1OTc0LjE3NTY1Mzg1NDg.*_ga_8JE65Q40S6*czE3NTY1Mzg1NDgkbzEkZzEkdDE3NTY1Mzg1ODkkajE5JGwwJGgw"
+          src={isMobile ? "/images/hero.jpg" : "/images/hero_desk.jpg"}
           alt="Hero Image"
           loading="lazy"
           animate={{
@@ -47,7 +56,7 @@ export default function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          
+
         />
       </div>
       <div className="relative z-10 container h-full mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-32 lg:mt-[50px]">
@@ -72,13 +81,12 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
-
           {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto mt-6 max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
+            className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
           >
             {t("third")}
           </motion.p>
@@ -88,11 +96,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row"
           >
             <Button
               size="lg"
-              className="group bg-primary text-white dark:text-white hover:shadow-primary/30 relative overflow-hidden rounded-full px-6 shadow-lg transition-all duration-300 hover:cursor-pointer hover:scale-105 w-full md:w-fit"
+              variant="default"
+              className="group hover:cursor-pointer hover:scale-105 w-full md:w-fit rounded-full"
+              onClick={() => {
+                handleScrollToSection("locations");
+              }}
             >
               <span className="relative z-10 flex items-center">
                 {t2("secondary")}
@@ -101,11 +113,14 @@ export default function Hero() {
             </Button>
 
             <Button
-              variant="outline"
+              variant="destructive"
               size="lg"
-              className="border-border bg-background/50 flex items-center gap-2 rounded-full backdrop-blur-sm hover:cursor-pointer hover:scale-105 w-full md:w-fit hover:text-foreground"
+              className="hover:cursor-pointer hover:scale-105 rounded-full bg-accent text-black hover:bg-accent/80"
+              onClick={() => {
+                window.open("https://wa.me/5585073745", "_blank");
+              }}
             >
-              <Calendar className="h-4 w-4" />
+              <WhatsAppIcon color="var(--black)" />
               {t2("primary")}
             </Button>
           </motion.div>
@@ -122,13 +137,6 @@ export default function Hero() {
             }}
             className="hidden md:block relative mx-auto mt-8"
           >
-            <HeroVideoDialog
-              className="w-full max-w-[90.5%] mx-auto z-[10000]"
-              animationStyle="top-in-bottom-out"
-              videoSrc="https://www.youtube.com/embed/yvKDsUxq8V0?si=eawyBvja-A5fuFGL"
-              thumbnailSrc="/images/overview.jpg"
-              thumbnailAlt="Hero Video"
-            />
           </motion.div>
           <motion.div
             variants={{

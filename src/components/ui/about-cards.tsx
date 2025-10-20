@@ -93,7 +93,7 @@ export default function AboutUs2() {
       decimalPlaces: 0,
     },
     {
-      value: 15,
+      value: 25,
       startValue: 12,
       label: t('yearsOfExperience'),
       icon: <Clock className="h-5 w-5" />,
@@ -109,16 +109,7 @@ export default function AboutUs2() {
       delay: 0.3,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
-    },
-    {
-      value: 24,
-      startValue: 22,
-      label: t('awardsWon'),
-      icon: <Award className="h-5 w-5" />,
-      delay: 0.4,
-      color: 'from-primary to-primary/70',
-      decimalPlaces: 0,
-    },
+    }
   ];
 
   return (

@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRight, Star } from "lucide-react";
+import Image from "next/image";
 import { Marquee } from "@/components/ui/maquee";
 import { TitleSection } from "./ui/title-section";
 import { Button } from "./ui/button";
@@ -48,7 +49,7 @@ export function TestimonialCard({
   return (
     <div
       className={cn(
-        "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4",
+        "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4 relative overflow-hidden",
         // theme styles
         "border-border bg-card/50 border shadow-sm",
         // hover effect
@@ -57,7 +58,16 @@ export function TestimonialCard({
       )}
       {...props}
     >
-      <div className="text-muted-foreground text-sm font-normal select-none">
+      {/* Google icon overlay */}
+      <div className="absolute bottom-4 opacity-50 right-6 pointer-events-none z-0">
+        <Image
+          src="/images/google.svg"
+          alt="Google Reviews"
+          width={60}
+          height={60}
+        />
+      </div>
+      <div className="text-muted-foreground text-sm font-normal select-none relative z-10">
         {description}
         <div className="flex flex-row py-1">
           <Star className="size-4 fill-blue-500 text-blue-500" />
@@ -68,7 +78,7 @@ export function TestimonialCard({
         </div>
       </div>
 
-      <div className="flex w-full items-center justify-start gap-5 select-none">
+      <div className="flex w-full items-center justify-start gap-5 select-none relative z-10">
         <img
           width={40}
           height={40}
@@ -219,7 +229,7 @@ export default function Testimonials() {
         <div className="absolute top-20 -left-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
         <div className="absolute -right-20 bottom-20 z-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl" />
 
-        <TitleSection title={t2("title")} />
+        <TitleSection title={t2("title")} variant="default" />
 
         <div className="relative max-h-screen overflow-hidden">
           <div className="gap-4 md:columns-2 xl:columns-3">

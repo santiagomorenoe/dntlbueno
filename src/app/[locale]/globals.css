@@ -99,6 +99,10 @@
 }
 
 :root {
+
+  --white: #FFFFFF;
+  --black: #000000;
+
   --background: oklch(98% 0.01 240);             /* Fondo cálido #F3E6D3 */
   --foreground: oklch(38% 0.14 240);            /* Texto primario #1C658C */
 
@@ -114,16 +118,15 @@
   --secondary: oklch(65% 0.12 210);             /* Azul verdoso #4796B4 */
   --secondary-foreground: oklch(100% 0 0);
 
-  --muted: oklch(87% 0.03 70);                  /* Gris/beige #D8D2CB */
+  --muted: #ecc6ff;                  /* Gris/beige #D8D2CB */
   --muted-foreground: oklch(47% 0.09 260);      /* Texto secundario #556DAB */
 
-  --accent: oklch(58% 0.24 310);                /* Morado #9145B6 */
-  --accent-foreground: oklch(100% 0 0);
+  --accent: #ecc6ff;                /* Morado #9145B6 */
 
   --destructive: oklch(58% 0.24 27);            /* Ajustado a rojo/magenta */
   --destructive-foreground: oklch(100% 0 0);
 
-  --border: oklch(87% 0.03 70);
+  --border: #87A6B0;
   --input: oklch(87% 0.03 70);
   --ring: oklch(56% 0.16 255);                  /* Azul primario */
 
@@ -182,8 +185,8 @@
   --popover: oklch(22% 0.02 260);
   --popover-foreground: oklch(95% 0.01 250);
 
-  --primary: oklch(72% 0.15 255);               /* Azul brillante */
-  --primary-foreground: oklch(15% 0.02 250);
+  --primary: oklch(56% 0.16 255);               /* Azul confiable #3366B2 */
+  --primary-foreground: oklch(100% 0 0);      
 
   --secondary: oklch(75% 0.13 210);
   --secondary-foreground: oklch(15% 0.02 250);
@@ -191,10 +194,10 @@
   --muted: oklch(28% 0.03 250);
   --muted-foreground: oklch(80% 0.02 250);
 
-  --accent: oklch(70% 0.25 310);                /* Morado más vivo */
-  --accent-foreground: oklch(15% 0.02 250);
+  --accent: #ecc6ffd0;                /* Morado más vivo */
+  --accent-foreground: #000000;
 
-  --destructive: oklch(55% 0.23 27);            /* Rojo oscuro */
+  --destructive: #ecc6ff;;            /* Rojo oscuro */
   --destructive-foreground: oklch(95% 0.01 250);
 
   --border: oklch(28% 0.03 250);
@@ -239,7 +242,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 1px;
   background-color: transparent;
 }
 

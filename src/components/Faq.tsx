@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { TitleSection } from "./ui/title-section";
-import { WhatsAppIcon } from "./Navbar";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import { WhatsAppIcon } from "./Footer";
 
 interface FAQItemProps {
   question: string;
@@ -166,9 +166,9 @@ export default function Faq3() {
       />
 
       <div className="relative max-w-7xl mx-auto px-4 z-20">
-        <TitleSection title={t("title")} />
+        <TitleSection title={t("title")} variant="default" />
 
-        <div className="mx-auto max-w-2xl space-y-2">
+        <div className="mx-auto max-w-2xl space-y-2 mt-8">
           {faqs.map((faq, index) => (
             <FAQItem key={index} {...faq} index={index} />
           ))}
@@ -190,12 +190,16 @@ export default function Faq3() {
             {t("contactText2")}
           </p>
           <Button
-            variant="outline"
-            className="hover:text-foreground hover:scale-105 hover:cursor-pointer"
-          >
-            {t("btnText")}
-            <WhatsAppIcon />
-          </Button>
+              variant="destructive"
+              size="lg"
+              className="hover:cursor-pointer hover:scale-105 rounded-full bg-accent text-black hover:bg-accent/80"
+              onClick={() => {
+                window.open("https://wa.me/5585073745", "_blank");
+              }}
+            >
+              <WhatsAppIcon color="var(--black)" />
+              {t("btnText")}
+            </Button>
         </motion.div>
       </div>
     </section>
