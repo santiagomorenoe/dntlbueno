@@ -78,7 +78,7 @@ export default async function LocaleLayout({
             storageKey="theme"
           >
             <Navbar />
-            <main className="min-h-dvh">
+            <main>
               {children}
             </main>
             <FooterNewsletter />

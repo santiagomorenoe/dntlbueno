@@ -63,11 +63,8 @@ export default function Hero() {
         <div className="mx-auto max-w-6xl h-full flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center w-full mx-auto">
             {/* Heading */}
-            <motion.div
+            <div
               className="pt-4 lg:mt-0 flex flex-row gap-2 items-center justify-center text-center bg-gradient-to-l from-white via-white/50 to-white/90 text-transparent bg-clip-text"
-              variants={titleVariants}
-              initial="hidden"
-              animate="visible"
             >
               <div>
                 <span className="text-4xl md:text-7xl font-semibold font-josefin-sans">
@@ -79,7 +76,7 @@ export default function Hero() {
                   Bueno
                 </span>
               </div>
-            </motion.div>
+            </div>
           </div>
           {/* Description */}
           <motion.p

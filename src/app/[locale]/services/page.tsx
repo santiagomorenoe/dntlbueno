@@ -44,7 +44,7 @@ export default function ServicesPage() {
     t("services_page.servicios.destacados.3"),
   ];
 
-  // Get general services
+  // Get general services deployyyy
   const generalServicesCount = 8; // Based on the JSON structurex
   const generalServices = Array.from({ length: generalServicesCount }, (_, i) => ({
     title: t(`services_page.servicios.general_services.services.${i}.title`),
