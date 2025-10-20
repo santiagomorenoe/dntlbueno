@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowDown, Calendar, MapPin } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/app/hooks/use-is-mobile";
 import { useTranslations } from "next-intl";

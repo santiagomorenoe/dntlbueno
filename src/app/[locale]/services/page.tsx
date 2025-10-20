@@ -34,8 +34,9 @@ const iconMap: { [key: string]: LucideIcon } = {
 
 export default function ServicesPage() {
   const t = useTranslations("services");
+  const title = useTranslations("common.pages");
 
-  // Get featured services dadadadadada deployyyyy
+  // Get featured services
   const featuredServices = [
     t("services_page.servicios.destacados.0"),
     t("services_page.servicios.destacados.1"),
@@ -44,7 +45,7 @@ export default function ServicesPage() {
   ];
 
   // Get general services
-  const generalServicesCount = 8; // Based on the JSON structure
+  const generalServicesCount = 8; // Based on the JSON structurex
   const generalServices = Array.from({ length: generalServicesCount }, (_, i) => ({
     title: t(`services_page.servicios.general_services.services.${i}.title`),
     description: t(`services_page.servicios.general_services.services.${i}.description`),
@@ -85,7 +86,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Banner */}
-      <PageBanner title={t("title")} />
+      <PageBanner title={title("services")} />
 
       {/* Main Content */}
       <div className="container mx-auto px-4 space-y-16 py-16">

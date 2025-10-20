@@ -83,67 +83,6 @@ export default function FaqPage() {
           <IllustratedCards cards={helpTopics} />
         </section>
 
-        {/* Info Cards Section */}
-        <section className="grid md:grid-cols-2 gap-6">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="relative overflow-hidden rounded-2xl border border-border bg-card p-8"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-
-            <div className="relative z-10">
-              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Phone className="h-7 w-7" />
-              </div>
-
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Consulta Telefónica
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Habla directamente con nuestros especialistas y resuelve tus dudas antes de tu visita.
-              </p>
-
-              <div className="relative h-32 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <p className="text-sm text-muted-foreground text-center px-4">
-                  [Ilustración de consulta telefónica]
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="relative overflow-hidden rounded-2xl border border-border bg-card p-8"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-
-            <div className="relative z-10">
-              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <MessageCircle className="h-7 w-7" />
-              </div>
-
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Asistente Virtual
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Chatea con nuestro asistente virtual disponible 24/7 para respuestas inmediatas.
-              </p>
-
-              <div className="relative h-32 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <p className="text-sm text-muted-foreground text-center px-4">
-                  [Ilustración de chatbot]
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-
         {/* Tips Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -167,16 +106,11 @@ export default function FaqPage() {
               },
               {
                 number: "02",
-                title: "Trae tus estudios previos",
-                description: "Radiografías o estudios anteriores nos ayudarán a brindarte mejor atención.",
-              },
-              {
-                number: "03",
                 title: "Prepara tus preguntas",
                 description: "Anota cualquier duda sobre tu salud dental que quieras resolver.",
               },
               {
-                number: "04",
+                number: "03",
                 title: "Comunica tus necesidades",
                 description: "Cuéntanos tus expectativas y metas para tu sonrisa ideal.",
               },
@@ -193,8 +127,8 @@ export default function FaqPage() {
                   {tip.number}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">{tip.title}</h4>
-                  <p className="text-sm text-muted-foreground">{tip.description}</p>
+                  <h4 className="font-semibold text-black mb-1">{tip.title}</h4>
+                  <p className="text-sm text-black">{tip.description}</p>
                 </div>
               </motion.div>
             ))}

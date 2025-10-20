@@ -52,13 +52,13 @@
     "stats": {
       "satisfiedPatients": "Pacientes Satisfechos",
       "yearsOfExperience": "Años de Experiencia",
-      "branches": "Sucursales",
+      "branches": "Sucursales en CDMX y Estado de México",
       "awardsWon": "Premios Ganados"
     }
   },
   "services": {
-    "title": "**Servicios** Especializados",
-    "btnText": "Ver todos los servicios",
+    "title": "Servicios **destacados**",
+    "btnText": "Explora todos nuestros servicios",
     "services": [
       {
         "title": "Diseño Dental",
@@ -487,7 +487,7 @@
   },
   "footer": {
     "title": "Nuestras **Redes Sociales**",
-    "description": "Dental Bueno te invita a descubrir una historia llena de pasión y dedicación que se extiende por más de 25 años",
+    "description": "Queremos regresarte una sonrisa con B de Bueno",
     "btnText": "Síguenos",
     "copyright": "© 2025 Dental Bueno. Todos los derechos reservados.",
     "columns": [

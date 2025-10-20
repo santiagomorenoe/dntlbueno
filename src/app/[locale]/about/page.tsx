@@ -7,6 +7,7 @@ import { Timeline } from "@/components/ui/timeline";
 import { Award, Users, Globe, Heart, Sparkles, TrendingUp } from "lucide-react";
 import { NumberTicker } from '@/components/ui/number-bounced';
 import { TitleSection } from "@/components/ui/title-section";
+import Image from "next/image";
 
 export default function AboutPage() {
   const t = useTranslations();
@@ -267,9 +268,13 @@ export default function AboutPage() {
             </div>
 
             <div className="relative h-64 md:h-96 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <p className="text-muted-foreground text-center px-8">
-                [Espacio para imagen de la Dra. Liliana Bueno]
-              </p>
+              <Image 
+                src="/images/drBuenoS.jpg"
+                alt="Dra. Liliana Bueno"
+                fill
+                className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out"
+                loading="lazy"
+              />
             </div>
           </div>
         </motion.section>

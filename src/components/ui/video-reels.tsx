@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Play, Volume2, VolumeX } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface VideoReel {
   id: string;
@@ -36,9 +37,7 @@ export function VideoReels({ reels, className }: VideoReelsProps) {
           >
             {/* Placeholder para thumbnail del video */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <p className="text-xs text-muted-foreground text-center px-4">
-                [Video: {reel.title}]
-              </p>
+              <Image src={reel.thumbnail} alt={reel.title} className="w-full h-full object-cover" width={100} height={100} />
             </div>
 
             {/* Overlay con título */}

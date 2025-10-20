@@ -83,10 +83,10 @@ export const TitleSection: React.FC<TitleSectionProps> = ({ title, variant = "de
   return (
     <motion.div
       variants={containerVariants}
-      initial="hidden"
+      initial="visible"
       whileInView="visible"
       viewport={{ once: false }}
-      className={`text-left md:text-center flex flex-col items-center justify-center font-josefin-sans relative w-full max-w-4xl mx-auto px-4 md:px-8 ${className}`}
+      className={`text-center flex flex-col items-center justify-center font-josefin-sans relative w-full max-w-4xl mx-auto px-4 md:px-8 ${className}`}
     >
       {/* Título con dos colores */}
       <motion.div
@@ -124,7 +124,7 @@ export const DescriptionSection = ({ description, className }: { description: st
   return (
     <motion.div
       variants={containerVariants}
-      initial="hidden"
+      initial="visible"
       whileInView="visible"
       viewport={{ once: false }}
       className={`text-left flex flex-col items-center justify-center text-white/80 font-inter relative w-full max-w-4xl mx-auto px-4 md:px-8 ${className}`}

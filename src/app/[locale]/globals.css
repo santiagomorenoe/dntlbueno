@@ -238,7 +238,7 @@ html {
 }
 
 ::selection {
-  @apply bg-primary text-primary-foreground;
+  @apply bg-accent text-primary-foreground;
 }
 
 body::-webkit-scrollbar {

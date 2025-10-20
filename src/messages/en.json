@@ -487,7 +487,7 @@
   },
   "footer": {
     "title": "Our **Social Media**",
-    "description": "We're the best dental clinic in the heart of Mexico. Change your smile and your life.",
+    "description": "We want to give you a smile with B of Bueno",
     "btnText": "Follow us",
     "copyright": "© 2025 Dental Bueno. All rights reserved.",
     "columns": [
@@ -515,10 +515,10 @@
       }
     ],
     "legalLinks": [
-      "Terms of Service",
-      "Privacy Policy",
-      "Cookie Settings",
-      "Accessibility"
+      "Website developed by Santi Moreno @Syntora",
+      "",
+      "",
+      ""
     ]
   } 
 }

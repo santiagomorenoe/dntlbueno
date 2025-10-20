@@ -9,6 +9,7 @@ import { TitleSection } from "@/components/ui/title-section";
 import { MapPin, Users, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import { IllustratedCards } from "@/components/ui/illustrated-cards";
+import Image from "next/image";
 
 export default function BranchesPage() {
   const t = useTranslations("common.pages");
@@ -192,6 +193,7 @@ export default function BranchesPage() {
             </div>
 
             <div className="relative h-64 md:h-96 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+            <Image src="/images/branchesimg.jpg" alt="Dra. Liliana Bueno" fill className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out" loading="lazy" />
             </div>
           </div>
         </motion.section>

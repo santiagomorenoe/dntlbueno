@@ -8,11 +8,12 @@ import { ChevronRight } from "lucide-react";
 import { TitleSection } from "./ui/title-section";
 import { useTranslations } from "next-intl";
 import { ServicesCarousel } from "./ui/servicesCarrousel";
+import { useRouter } from "next/navigation";
 
 
 export const Services: React.FC = () => {
   const t = useTranslations("services");
-
+  const router = useRouter();
   const data = [
     {
       title: t("services.0.title"),
@@ -36,17 +37,21 @@ export const Services: React.FC = () => {
     }
   ];
 
+  const handleNavigateTo = () => {
+    router.push("/services");
+  }
+  
   return (
     <section className="pt-24 md:pt-32 pb-12 w-full bg-background" id="services">
       <div className="flex flex-col md:flex-row gap-6 lg:gap-12 max-w-7xl mx-auto px-4">
         <div className="w-full md:w-1/4 md:sticky top-24 h-fit">
           <TitleSection title={t("title")} variant="default" />
           <div className="flex justify-center mt-4">
-        <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out">
-          {t("btnText")}
-          <ChevronRight />
-        </Button>
-      </div>
+            <Button variant="default" className="hover:cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out" onClick={() => handleNavigateTo()}>
+              {t("btnText")}
+              <ChevronRight />
+            </Button>
+          </div>
         </div>
         <div className="w-full md:w-3/4">
           <ServicesCarousel slides={data.map((item) => ({

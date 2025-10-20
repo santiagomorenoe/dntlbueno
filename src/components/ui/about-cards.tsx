@@ -21,6 +21,8 @@ interface StatItemProps {
   decimalPlaces?: number;
   color?: string;
   startValue?: number;
+  colSpan?: string;
+  plusIcon?: boolean;
 }
 
 const StatItem = ({
@@ -31,6 +33,8 @@ const StatItem = ({
   decimalPlaces = 0,
   color = 'from-primary to-primary/70',
   startValue = 100,
+  colSpan = '',
+  plusIcon = true,
 }: StatItemProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -44,6 +48,7 @@ const StatItem = ({
         resolvedTheme === 'dark'
           ? 'shadow-xl shadow-black/5'
           : 'shadow-lg shadow-black/[0.03]',
+        colSpan,
       )}
     >
       <div
@@ -71,7 +76,7 @@ const StatItem = ({
               className="tabular-nums"
               startValue={startValue}
             />
-            <span className="ml-1 text-sm font-medium text-white/80">+</span>
+            {plusIcon && <span className="ml-1 text-sm font-medium text-white/80">+</span>}
           </h3>
           <p className="text-white/80 text-sm font-medium">{label}</p>
         </div>
@@ -102,13 +107,14 @@ export default function AboutUs2() {
       decimalPlaces: 0,
     },
     {
-      value: 5,
+      value: 6,
       startValue: 3,
       label: t('branches'),
       icon: <Map className="h-5 w-5" />,
       delay: 0.3,
       color: 'from-primary to-primary/70',
       decimalPlaces: 0,
+      plusIcon: false,
     }
   ];
 
@@ -124,6 +130,9 @@ export default function AboutUs2() {
                 delay={stat.delay || index * 0.1}
                 decimalPlaces={stat.decimalPlaces}
                 color={stat.color}
+                startValue={stat.startValue}
+                colSpan={index === 2 ? 'lg:col-span-2' : ''}
+                plusIcon={stat.plusIcon}
               />
             ))}
         </div>

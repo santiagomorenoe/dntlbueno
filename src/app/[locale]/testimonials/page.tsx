@@ -16,25 +16,25 @@ export default function TestimonialsPage() {
   const videoReels = [
     {
       id: "1",
-      thumbnail: "/images/reel1.jpg",
+      thumbnail: "/images/t1.jpg",
       title: "Transformación de sonrisa - María García",
       views: "12K vistas",
     },
     {
       id: "2",
-      thumbnail: "/images/reel2.jpg",
+      thumbnail: "/images/t2.jpg",
       title: "Experiencia en implantes - Carlos Rodríguez",
       views: "8.5K vistas",
     },
     {
       id: "3",
-      thumbnail: "/images/reel3.jpg",
+      thumbnail: "/images/t3.jpg",
       title: "Ortodoncia invisible - Ana López",
       views: "15K vistas",
     },
     {
       id: "4",
-      thumbnail: "/images/reel4.jpg",
+      thumbnail: "/images/t4.jpg",
       title: "Diseño de sonrisa - Juan Pérez",
       views: "10K vistas",
     }

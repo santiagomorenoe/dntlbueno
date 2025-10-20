@@ -62,7 +62,7 @@ export function FeaturedServices({ services, className }: FeaturedServicesProps)
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ y: -10 }}
               className="group relative overflow-hidden rounded-xl bg-card border border-border p-4 transition-all duration-300 hover:border-primary hover:shadow-md"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
