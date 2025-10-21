@@ -20,12 +20,7 @@ export function ServiceCard({
   className,
 }: ServiceCardProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay }}
-      whileHover={{ y: -5 }}
+    <div
       className={cn(
         "group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/50",
         className
@@ -62,6 +57,6 @@ export function ServiceCard({
         transition={{ duration: 0.6, delay: delay + 0.2 }}
         className="absolute -right-2 -top-2 h-16 w-16 bg-primary/10 rounded-full blur-2xl"
       />
-    </motion.div>
+    </div>
   );
 }
