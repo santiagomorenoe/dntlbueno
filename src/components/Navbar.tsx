@@ -272,21 +272,6 @@ export const Navbar: React.FC = () => {
                   </motion.li>
                 ))}
               </ul>
-              <motion.div
-                className="w-full flex justify-center mx-auto"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="hover:scale-105 transition-all duration-300 hover:cursor-pointer"
-                >
-                  <Phone className="mr-2 h-4 w-4" />
-                  {btnText}
-                </Button>
-              </motion.div>
             </div>
           </div>
         )}
