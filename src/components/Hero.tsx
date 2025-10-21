@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/45 z-10" />
         <motion.img
           className="w-full h-full object-cover"
-          src={isMobile ? "/images/hero_mobile.jpg" : "/images/hero_desk.jpg"}
+          src={isMobile ? "/images/hero_mobile.JPG" : "/images/hero_desk.jpg"}
           alt="Hero Image"
           loading="lazy"
           animate={{
