@@ -91,7 +91,7 @@ export const TitleSection: React.FC<TitleSectionProps> = ({ title, variant = "de
       {/* Título con dos colores */}
       <motion.div
         variants={itemVariants}
-        className={`text-[28px] sm:text-[32px] md:text-[36px] first-letter:capitalize ${textColor} w-full break-words`}
+        className={`text-[32px] sm:text-[36px] md:text-[39px] first-letter:capitalize ${textColor} w-full break-words`}
         whileHover={{ scale: 1.04 }}
       >
         {title.split("\n").map((paragraph: string, index: number) => {
@@ -104,7 +104,7 @@ export const TitleSection: React.FC<TitleSectionProps> = ({ title, variant = "de
                     <motion.span
                       key={i}
                       variants={highlightVariants}
-                      className={`block text-[36px] md:text-[39px] uppercase ${highlightColor} font-extralight font-inter`}
+                      className={`block text-[37px] uppercase ${highlightColor} font-extralight font-inter`}
                     >
                       {part.slice(2, -2)}
                     </motion.span>
