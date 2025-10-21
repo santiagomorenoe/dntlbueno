@@ -33,7 +33,7 @@ const handleScrollToSection = (sectionId: string) => {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
-
+// HERO IMAGE
 export default function Hero() {
   const t = useTranslations("home.title");
   const t2 = useTranslations("home.cta");
