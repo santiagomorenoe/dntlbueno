@@ -104,7 +104,7 @@ export const TitleSection: React.FC<TitleSectionProps> = ({ title, variant = "de
                     <motion.span
                       key={i}
                       variants={highlightVariants}
-                      className={`block text-[36px] md:text-[48px] uppercase ${highlightColor} font-extralight font-inter`}
+                      className={`block text-[36px] md:text-[39px] uppercase ${highlightColor} font-extralight font-inter`}
                     >
                       {part.slice(2, -2)}
                     </motion.span>

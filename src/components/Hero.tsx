@@ -83,7 +83,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto max-w-[90%] text-center font-bold text-lg font-inter text-transparent"
+            className="from-white via-white/60 to-white/75 bg-gradient-to-tl bg-clip-text mx-auto max-w-[95%] text-center font-bold text-lg font-inter text-transparent"
           >
             {t("third")}
           </motion.p>
