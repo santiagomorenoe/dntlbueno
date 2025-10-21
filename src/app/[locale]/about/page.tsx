@@ -114,17 +114,6 @@ export default function AboutPage() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            {t("about.title").split("**").map((part, i) =>
-              i % 2 === 1 ? (
-                <span key={i} className="text-primary">
-                  {part}
-                </span>
-              ) : (
-                part
-              )
-            )}
-          </h2>
           <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
             <p>
               {t("about.description").split("**").map((part, i) =>
@@ -194,12 +183,8 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {values.map((value, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/50"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -217,7 +202,7 @@ export default function AboutPage() {
                     {value.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </section>

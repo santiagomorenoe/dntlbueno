@@ -124,11 +124,7 @@ export default function BranchesPage() {
 
         {/* Features Section */}
         <section>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="mb-10"
           >
             <TitleSection
@@ -139,7 +135,7 @@ export default function BranchesPage() {
               Instalaciones modernas diseñadas para tu comodidad y equipadas con la
               mejor tecnología dental
             </p>
-          </motion.div>
+          </div>
 
           <IllustratedCards cards={featureCards} />
         </section>
@@ -168,11 +164,7 @@ export default function BranchesPage() {
         */}
 
         {/* Info Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <div
           className="relative overflow-hidden rounded-3xl bg-muted p-8 md:p-12"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -196,7 +188,7 @@ export default function BranchesPage() {
             <Image src="/images/branchesimg.jpg" alt="Dra. Liliana Bueno" fill className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out" loading="lazy" />
             </div>
           </div>
-        </motion.section>
+        </div>
 
         {/* CTA Section */}
         <CTASection

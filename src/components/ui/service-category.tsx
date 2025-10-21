@@ -27,11 +27,7 @@ export function ServiceCategory({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay }}
+    <div
       className="group relative overflow-hidden rounded-3xl border border-border bg-card shadow-md transition-all duration-300 hover:shadow-xl"
     >
       {/* Header */}
@@ -101,6 +97,6 @@ export function ServiceCategory({
 
       {/* Decorative background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none" />
-    </motion.div>
+    </div>
   );
 }

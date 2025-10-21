@@ -19,14 +19,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.3,
-        delay: index * 0.15,
-        ease: "easeOut",
-      }}
+    <div
       className={cn(
         "group border-border rounded-lg border",
         "transition-all duration-200 ease-in-out",
@@ -114,7 +107,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </div>
   );
 }
 
@@ -173,34 +166,6 @@ export default function Faq3() {
             <FAQItem key={index} {...faq} index={index} />
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className={cn("mx-auto mt-12 max-w-md rounded-lg p-6 text-center")}
-        >
-          <div className="bg-primary/10 text-primary mb-4 inline-flex items-center justify-center rounded-full p-2">
-            <Mail className="h-4 w-4" />
-          </div>
-          <p className="text-foreground mb-1 text-sm font-medium">
-            {t("contactText")}
-          </p>
-          <p className="text-muted-foreground mb-4 text-xs">
-            {t("contactText2")}
-          </p>
-          <Button
-              variant="destructive"
-              size="lg"
-              className="hover:cursor-pointer hover:scale-105 rounded-full bg-accent text-black hover:bg-accent/80"
-              onClick={() => {
-                window.open("https://wa.me/5585073745", "_blank");
-              }}
-            >
-              <WhatsAppIcon color="var(--black)" />
-              {t("btnText")}
-            </Button>
-        </motion.div>
       </div>
     </section>
   );

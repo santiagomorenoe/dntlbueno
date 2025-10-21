@@ -7,7 +7,6 @@ import { IllustratedCards } from "@/components/ui/illustrated-cards";
 import { CTASection } from "@/components/ui/cta-section";
 import { TitleSection } from "@/components/ui/title-section";
 import { Calendar, Clock, CreditCard, FileText, Phone, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function FaqPage() {
   const t = useTranslations("common.pages");
@@ -64,11 +63,7 @@ export default function FaqPage() {
 
         {/* Help Topics Section */}
         <section>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="mb-10"
           >
             <TitleSection
@@ -78,17 +73,13 @@ export default function FaqPage() {
             <p className="text-center text-muted-foreground mt-4 max-w-2xl mx-auto">
               Información útil sobre los temas más consultados por nuestros pacientes
             </p>
-          </motion.div>
+          </div>
 
           <IllustratedCards cards={helpTopics} />
         </section>
 
         {/* Tips Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <div
           className="relative overflow-hidden rounded-3xl bg-accent text-black p-8 md:p-12"
         >
           <div className="mb-8">
@@ -115,12 +106,8 @@ export default function FaqPage() {
                 description: "Cuéntanos tus expectativas y metas para tu sonrisa ideal.",
               },
             ].map((tip, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="flex gap-4"
               >
                 <div className="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-black font-bold">
@@ -130,10 +117,10 @@ export default function FaqPage() {
                   <h4 className="font-semibold text-black mb-1">{tip.title}</h4>
                   <p className="text-sm text-black">{tip.description}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.section>
+        </div>
 
         {/* CTA Section */}
         <CTASection

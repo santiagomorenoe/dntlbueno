@@ -57,7 +57,7 @@
     }
   },
   "services": {
-    "title": "Services",
+    "title": "Services **featured**",
     "btnText": "See all services",
     "services": [
       {

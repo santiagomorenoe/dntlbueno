@@ -90,30 +90,14 @@ export default function ServicesPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 space-y-16 py-16">
-        {/* Featured Services Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <FeaturedServices services={featuredServices} />
-        </motion.section>
-
         {/* General Services Section */}
         <section>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-10"
-          >
+          <div className="mb-10">
             <TitleSection
               title={`${t("services_page.servicios.general_services.title")} **Integrales**`}
               variant="default"
             />
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {generalServices.map((service, index) => (
@@ -130,15 +114,9 @@ export default function ServicesPage() {
 
         {/* Specialized Services Section */}
         <section>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-10"
-          >
+          <div className="mb-10">
             <TitleSection title="Especialidades **Médicas**" variant="default" />
-          </motion.div>
+          </div>
 
           <div className="space-y-6">
             {specializedCategories.map((category, categoryIndex) => {

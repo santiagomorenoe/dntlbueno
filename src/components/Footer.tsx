@@ -60,7 +60,7 @@ export default function FooterNewsletter() {
   ];
 
   return (
-    <footer className="bg-primary h-[calc(100vh-90px)] text-white relative w-full pt-20 pb-10 z-10 overflow-x-hidden">
+    <footer className="bg-primary text-white relative w-full pt-20 pb-10 z-10 overflow-x-hidden">
       <div
         className="absolute inset-0 w-full h-full z-10"
         style={{

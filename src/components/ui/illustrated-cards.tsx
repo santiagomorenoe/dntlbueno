@@ -24,13 +24,8 @@ export function IllustratedCards({ cards, className }: IllustratedCardsProps) {
         const colorClass = card.color || "primary";
 
         return (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            whileHover={{ y: -5 }}
             className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"
           >
 
@@ -89,7 +84,7 @@ export function IllustratedCards({ cards, className }: IllustratedCardsProps) {
               transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
               className="absolute -right-4 -top-4 h-20 w-20 bg-primary/10 rounded-full blur-2xl"
             />
-          </motion.div>
+          </div>
         );
       })}
     </div>
