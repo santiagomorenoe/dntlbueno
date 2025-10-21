@@ -194,7 +194,7 @@
   --muted: oklch(28% 0.03 250);
   --muted-foreground: oklch(80% 0.02 250);
 
-  --accent: #ecc6ffd0;                /* Morado más vivo */
+  --accent: #ecc6ff;                /* Morado más vivo */
   --accent-foreground: #000000;
 
   --destructive: #ecc6ff;;            /* Rojo oscuro */
