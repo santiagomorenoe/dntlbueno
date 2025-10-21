@@ -257,8 +257,8 @@ export const Navbar: React.FC = () => {
                 {filteredSections.map((link, index) => (
                   <motion.li
                     key={`mobile-link-${index}-${link.navbar_title}`}
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                     className="transform transition-transform duration-300 hover:scale-105"
                   >
