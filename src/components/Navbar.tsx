@@ -169,13 +169,10 @@ export const Navbar: React.FC = () => {
 
   return (
     <div>
-      <motion.div
+      <div
         className={`w-full fixed left-0 right-0 flex items-center justify-between px-5 sm:px-8 lg:px-16 z-50 transition-all duration-300 ease-in-out ${
           menuOpen ? "" : navbarBackgroundClass
         } py-4 md:py-5`}
-        initial="hidden"
-        animate="visible"
-        variants={navbarVariants}
       > 
         {renderLogo()}
 
@@ -247,17 +244,13 @@ export const Navbar: React.FC = () => {
             <ThemeToggle />
           </div>
         </motion.div>
-      </motion.div>
+      </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
+          <div
             className={`fixed inset-0 w-full ${mobileMenuBgClass} z-40 xl:hidden`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
           >
             <div className="flex flex-col items-center justify-center h-full">
               <ul className="space-y-8 md:space-y-10 text-center mb-12 md:mb-14 w-full px-6">
@@ -295,7 +288,7 @@ export const Navbar: React.FC = () => {
                 </Button>
               </motion.div>
             </div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </div>
